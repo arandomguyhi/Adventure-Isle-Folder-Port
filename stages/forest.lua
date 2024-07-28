@@ -34,6 +34,13 @@ function onCreate()
         setVar('HSamy', HSamy);
     ]])
 
+    for i = 1,2 do
+        makeLuaSprite('border'..i, imgPath..'michael/border', 0, -75+i*75)
+        setProperty('border'..i..'.antialiasing', false)
+        addLuaSprite('border'..i)
+    end
+    setProperty('border1.x', -500) setProperty('border2.x', 500)
+
     makeAnimatedLuaSprite('pretty', imgPath..'transition/pretty')
     addAnimationByPrefix('pretty', 'anim', 'idle', 12, false)
     scaleObject('pretty', 4.05, 4.05)
@@ -42,6 +49,15 @@ function onCreate()
     setProperty('pretty.antialiasing', false)
     addLuaSprite('pretty')
     setProperty('pretty.alpha', 0.001)
+
+    makeAnimatedLuaSprite('suffer', imgPath..'transition/suffer')
+    addAnimationByPrefix('suffer', 'anim', 'idle', 12, false)
+    scaleObject('suffer', 4.05, 4.05)
+    setObjectCamera('suffer', 'hud')
+    screenCenter('suffer', 'XY')
+    setProperty('suffer.antialiasing', false)
+    addLuaSprite('suffer')
+    setProperty('suffer.alpha', 0.001)
 
     makeLuaSprite('blackGraphic', nil)
     makeGraphic('blackGraphic', screenWidth, screenHeight, '000000')
@@ -82,6 +98,9 @@ function onUpdate()
     if getProperty('pretty.animation.curAnim.finished') then
         setProperty('pretty.alpha', 0.001)
     end
+    if getProperty('suffer.animation.curAnim.finished') then
+        setProperty('suffer.alpha', 0.001)
+    end
 
     if curStep >= 1327 and curStep <= 1472 then
         runHaxeCode([[
@@ -108,7 +127,7 @@ end
 
 function onBeatHit()
     if curStep >= 1327 and curStep <= 1454 then
-        setProperty('HSamy.x', -15)
+        setProperty('HSamy.x', -10)
         startTween('hardstyleamytween', 'HSamy', {x = -138}, 0.05, {}) -- velocity.x won't work for this
     end
 end
@@ -149,13 +168,29 @@ function onStepHit()
 
     if curStep == 1488 then
         setProperty('blackGraphic.alpha', 0.001)
+        for i = 1,2 do startTween('btween'..i, 'border'..i, {x = 0}, 2, {ease = 'circOut'})end
+        doTweenX('charlesTween', 'boyfriend', 0, 2, 'circOut')
+        setCharacterX('boyfriend', 500) setCharacterY('boyfriend', 77)
+
+        setProperty('dad.alpha', 1)
+        setCharacterX('dad', -502) setCharacterY('dad', 2)
+        doTweenX('michaelTween', 'dad', 2, 2, 'circOut')
+        setProperty('dad.color', getColorFromHex('000000'))
+    elseif curStep == 1720 then
+        setProperty('blackGraphic.alpha', 1)
+    elseif curStep == 1724 then
+        setProperty('suffer.alpha', 1)
+        playAnim('suffer', 'anim')
+    elseif curStep == 1759 then
+        setProperty('blackGraphic.alpha', 0.001)
+        setProperty('dad.color', getColorFromHex('FFFFFF'))
     end
 end
 
 function onEvent(n,v1,v2)
     if n == 'Play Animation' then
         if v1 == 'amyfastdrop' then
-            setProperty('HSamy.x', -15)
+            setProperty('HSamy.x', -10)
             startTween('hardstyleamytween', 'HSamy', {x = -138}, 0.05, {})
         end
     end
