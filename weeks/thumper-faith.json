@@ -1,0 +1,20 @@
+{
+	"songs": [
+		["Mortis", "yn-madotsuki", [146, 113, 253]]
+	],
+
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"weekBackground": "stage",
+
+	"storyName": "Faith: The Unholy Trinity",
+	"weekBefore": "thumper-yumenikki",
+	"weekName": "thumper-faith",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}
