@@ -8,6 +8,7 @@ function onCreate()
 
     setProperty('skipCountdown', true)
 
+    -- AMY'S PART
     makeLuaSprite('back1', imgPath..'bg1', -15, 196)
     setProperty('back1.antialiasing', false)
     addLuaSprite('back1')
@@ -34,6 +35,7 @@ function onCreate()
         setVar('HSamy', HSamy);
     ]])
 
+    -- MICHAEL'S PART
     for i = 1,2 do
         makeLuaSprite('border'..i, imgPath..'michael/border', 0, -75+i*75)
         setProperty('border'..i..'.antialiasing', false)
@@ -41,6 +43,18 @@ function onCreate()
     end
     setProperty('border1.x', -500) setProperty('border2.x', 500)
 
+    makeLuaSprite('mikeBg', imgPath..'michael/Michael BG', -130, 235)
+    setProperty('mikeBg.antialiasing', false)
+    addLuaSprite('mikeBg')
+    setProperty('mikeBg.alpha', 0.001)
+
+    -- SOLO
+    makeLuaSprite('alone', imgPath..'john/alone', -297, 253)
+    setProperty('alone.antialiasing', false)
+    addLuaSprite('alone')
+    setProperty('alone.alpha', 0.001)
+
+    -- CUTSCENES
     makeAnimatedLuaSprite('pretty', imgPath..'transition/pretty')
     addAnimationByPrefix('pretty', 'anim', 'idle', 12, false)
     scaleObject('pretty', 4.05, 4.05)
@@ -77,15 +91,6 @@ function onCreatePost()
     for i = 0,3 do
         setPropertyFromGroup('opponentStrums', i, 'visible', false)
     end
-
-    runHaxeCode([[
-        var crucifix = new FlxBar(FlxG.width-100, 150, FlxBarFillDirection.BOTTOM_TO_TOP, 31, 144, game, "health", 0, 2);
-        crucifix.createImageBar(Paths.image("healthbars/trinity/bar-p2"), Paths.image("healthbars/trinity/bar-p1"));
-	    crucifix.cameras = [game.camHUD];
-        crucifix.scale.set(3, 3.1);
-	    crucifix.updateHitbox();
-        game.add(crucifix);
-    ]])
 end
 
 function onSpawnNote()
@@ -112,12 +117,12 @@ function onUpdate()
 end
 
 function opponentNoteHit(i,d,t,s)
-    if not s then setHealth(getHealth()-0.007) end
+    setHealth(getHealth()-0.004)
 end
 
 function goodNoteHit(i,d,t,s)
     if not s then
-        setHealth(getHealth()+0.007)
+        setHealth(getHealth()+0.01)
     end
 end
 
@@ -184,6 +189,31 @@ function onStepHit()
     elseif curStep == 1759 then
         setProperty('blackGraphic.alpha', 0.001)
         setProperty('dad.color', getColorFromHex('FFFFFF'))
+    elseif curStep == 1880 then
+        doTweenAlpha('blackie', 'blackGraphic', 1, 0.75)
+        doTweenZoom('zoomin', 'camGame', 20, 1, 'backInOut')
+    end
+
+    if curStep == 1888 then
+        setProperty('border1.alpha', .001) setProperty('border2.alpha', .001)
+        setProperty('mikeBg.alpha', 1)
+
+        setCharacterX('boyfriend', 90) setCharacterY('boyfriend', 260) -- default
+        setCharacterX('dad', 0) setCharacterY('dad', 295)
+    elseif curStep == 1891 then
+        doTweenAlpha('blackieOut', 'blackGraphic', 0.001, 2)
+    end
+
+    if curStep == 2285 then
+        doTweenAlpha('blackie', 'blackGraphic', 1, 2)
+    elseif curStep == 2286 then
+        doTweenZoom('zoomin', 'camGame', 6, 4, 'sineInOut')
+    elseif curStep == 2332 then
+        setProperty('dad.alpha', 0.001)
+
+        doTweenAlpha('blackieOut', 'blackGraphic', 0.001, 2)
+        setProperty('mikeBg.alpha', 0.001)
+        setProperty('alone.alpha', 1)
     end
 end
 
