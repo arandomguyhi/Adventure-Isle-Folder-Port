@@ -54,6 +54,32 @@ function onCreate()
     addLuaSprite('alone')
     setProperty('alone.alpha', 0.001)
 
+    -- Garcia and Michael
+    for i = 1,2 do
+        makeLuaSprite('borderVert'..i, imgPath..'michael/border_vertical', -310+i*170, -82)
+        setProperty('borderVert'..i..'.antialiasing', false)
+        addLuaSprite('borderVert'..i, true)
+        setProperty('borderVert'..i..'.alpha', 0.001)
+    end
+    setProperty('borderVert1.y', -82+300) setProperty('borderVert2.y', -82-300)
+
+    makeLuaSprite('blackBorder', nil, -32, -82)
+    makeGraphic('blackBorder', 62, 154, '000000')
+    addLuaSprite('blackBorder', true)
+    setProperty('blackBorder.alpha', 0.001)
+
+    -- 2v2
+    makeLuaSprite('2v2bg', imgPath..'2v2', -310, -165)
+    setProperty('2v2bg.antialiasing', false)
+    addLuaSprite('2v2bg')
+    setProperty('2v2bg.alpha', 0.001)
+
+    -- AMY'S FINAL PART
+    makeLuaSprite('entrance', imgPath..'amy/entrance', -42-50, -42+130)
+    setProperty('entrance.antialiasing', false)
+    addLuaSprite('entrance')
+    setProperty('entrance.alpha', 0.001)
+
     -- CUTSCENES
     makeAnimatedLuaSprite('pretty', imgPath..'transition/pretty')
     addAnimationByPrefix('pretty', 'anim', 'idle', 12, false)
@@ -73,12 +99,24 @@ function onCreate()
     addLuaSprite('suffer')
     setProperty('suffer.alpha', 0.001)
 
+    makeAnimatedLuaSprite('bang', imgPath..'transition/bang')
+    addAnimationByPrefix('bang', 'anim', 'idle', 12, false)
+    scaleObject('bang', 4.05, 4.05)
+    setObjectCamera('bang', 'hud')
+    screenCenter('bang', 'XY')
+    setProperty('bang.antialiasing', false)
+    addLuaSprite('bang')
+    setProperty('bang.alpha', 0.001)
+
+    -- random shit
     makeLuaSprite('blackGraphic', nil)
-    makeGraphic('blackGraphic', screenWidth, screenHeight, '000000')
+    makeGraphic('blackGraphic', screenWidth, screenHeight, 'ffffff')
     setScrollFactor('blackGraphic', 0, 0)
     screenCenter('blackGraphic', 'XY')
     addLuaSprite('blackGraphic', true)
+    setProperty('blackGraphic.color', getColorFromHex('000000'))
 
+    setProperty('camZooming', true)
     setProperty('health', 2)
     setProperty('healthGain', 0)
 end
@@ -106,6 +144,9 @@ function onUpdate()
     if getProperty('suffer.animation.curAnim.finished') then
         setProperty('suffer.alpha', 0.001)
     end
+    if getProperty('bang.animation.curAnim.finished') then
+        setProperty('bang.alpha', 0.001)
+    end
 
     if curStep >= 1327 and curStep <= 1472 then
         runHaxeCode([[
@@ -117,12 +158,12 @@ function onUpdate()
 end
 
 function opponentNoteHit(i,d,t,s)
-    setHealth(getHealth()-0.004)
+    setHealth(getHealth()-0.003 * (dadName:find('amy') and 1 or 1.5))
 end
 
 function goodNoteHit(i,d,t,s)
     if not s then
-        setHealth(getHealth()+0.01)
+        setHealth(getHealth()+0.008)
     end
 end
 
@@ -134,6 +175,8 @@ function onBeatHit()
     if curStep >= 1327 and curStep <= 1454 then
         setProperty('HSamy.x', -10)
         startTween('hardstyleamytween', 'HSamy', {x = -138}, 0.05, {}) -- velocity.x won't work for this
+
+        setProperty('camHUD.zoom', getProperty('camHUD.zoom') + 0.01)
     end
 end
 
@@ -190,7 +233,7 @@ function onStepHit()
         setProperty('blackGraphic.alpha', 0.001)
         setProperty('dad.color', getColorFromHex('FFFFFF'))
     elseif curStep == 1880 then
-        doTweenAlpha('blackie', 'blackGraphic', 1, 0.75)
+        doTweenAlpha('blackie', 'blackGraphic', 1, 0.5)
         doTweenZoom('zoomin', 'camGame', 20, 1, 'backInOut')
     end
 
@@ -207,14 +250,85 @@ function onStepHit()
     if curStep == 2285 then
         doTweenAlpha('blackie', 'blackGraphic', 1, 2)
     elseif curStep == 2286 then
-        doTweenZoom('zoomin', 'camGame', 6, 4, 'sineInOut')
+        doTweenZoom('zoomin11', 'camGame', 6, 5, 'sineInOut')
     elseif curStep == 2332 then
+        cancelTween('zoomin11')
         setProperty('dad.alpha', 0.001)
 
         doTweenAlpha('blackieOut', 'blackGraphic', 0.001, 2)
         setProperty('mikeBg.alpha', 0.001)
         setProperty('alone.alpha', 1)
     end
+
+    if curStep == 2672 then
+        setProperty('blackGraphic.color', getColorFromHex('ffffff'))
+        doTweenAlpha('whiteFlash', 'blackGraphic', 1, 2)
+    elseif curStep == 2704 then
+        setProperty('alone.alpha', 0.001)
+        setProperty('blackBorder.alpha', 1)
+        for i=1,2 do setProperty('borderVert'..i..'.alpha', 1)end
+        setProperty('dad.alpha', 1)
+
+        setCharacterX('boyfriend', 16) setCharacterY('boyfriend', -58-300)
+        setCharacterX('dad', -138) setCharacterY('dad', -52+300)
+
+        doTweenY('border1twn', 'borderVert1', -82, 1.5, 'circOut')
+        doTweenY('dadtween', 'dad', -52, 1.5, 'circOut')
+
+        doTweenY('border2twn', 'borderVert2', -82, 1.5, 'circOut')
+        doTweenY('bftween', 'boyfriend', -58, 1.5, 'circOut')
+    elseif curStep == 2708 then
+        doTweenAlpha('whiteFlash', 'blackGraphic', .001, 2)
+    end
+
+    if curStep == 2952 then
+        setProperty('blackGraphic.color', getColorFromHex('000000'))
+        doTweenAlpha('blackalp', 'blackGraphic', 1, 0.5)
+        doTweenZoom('zoominlol', 'camGame', 8, 1.2, 'backInOut')
+    elseif curStep == 2960 then
+        cancelTween('zoominlol')
+        doTweenAlpha('blackalp', 'blackGraphic', 0.001, 1)
+
+        setProperty('blackBorder.alpha', .001)
+        for i=1,2 do setProperty('borderVert'..i..'.alpha', .001)end
+        setProperty('2v2bg.alpha', 1)
+
+        setProperty('michael.alpha', 1)
+        setProperty('gf.alpha', 1)
+
+        setCharacterX('dad', 35) setCharacterY('dad', -34)
+        setCharacterX('boyfriend', 82) setCharacterY('boyfriend', -110)
+        setCharacterX('girlfriend', -312) setCharacterY('girlfriend', -166)
+    end
+
+    if curStep == 3599 then
+        doTweenZoom('zoominagain', 'camGame', 5, 6, 'cubeIn')
+    elseif curStep == 3631 then
+        doTweenAlpha('somestage', '2v2bg', 0.001, 0.5)
+    elseif curStep == 3636 then
+        setProperty('bang.alpha', 1)
+        playAnim('bang', 'anim')
+    elseif curStep == 3656 then
+        setCharacterX('dad', 140-50) setCharacterY('dad', 94)
+        setCharacterX('boyfriend', -50) setCharacterY('boyfriend', 130)
+        setProperty('gf.alpha', 0.001)
+    elseif curStep == 3664 then
+        cameraFlash('camGame', 'FF0000', 1)
+        setProperty('entrance.alpha', 0.5)
+        setProperty('michael.alpha', 0.001)
+    end
+
+	if curStep == 4039 then
+		doTweenZoom('camGameZoom', 'camGame', 5.3, 1, 'cubeIn')
+	elseif curStep == 4048 then
+		cameraFlash('camGame', 'bce004', 1)
+		setProperty('entrance.alpha', 0.001)
+		setProperty('dad.alpha', 0.001)
+		setProperty('camZooming', false)
+		startTween('DCZtween', 'game', {defaultCamZoom = 3.5}, 25, {ease = 'quadIn'})
+	elseif curStep == 4284 then
+		doTweenAlpha('endsong', 'camHUD', 0.001, 2)
+	end
 end
 
 function onEvent(n,v1,v2)
@@ -222,6 +336,8 @@ function onEvent(n,v1,v2)
         if v1 == 'amyfastdrop' then
             setProperty('HSamy.x', -10)
             startTween('hardstyleamytween', 'HSamy', {x = -138}, 0.05, {})
+
+            setProperty('camHUD.zoom', getProperty('camHUD.zoom') + 0.01)
         end
     end
 end

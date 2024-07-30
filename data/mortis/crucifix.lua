@@ -8,7 +8,7 @@ function onCreate()
 
     for i = 1,2 do
         makeLuaSprite('crucifix'..i, 'healthbars/trinity/'..crucifixColor..'-p'..i, screenWidth-100, 150)
-        setObjectCamera('crucifix'..i, 'hud')
+	setObjectCamera('crucifix'..i, 'hud')
         scaleObject('crucifix'..i, 3, 3)
         updateHitbox('crucifix'..i)
         addLuaSprite('crucifix'..i)
