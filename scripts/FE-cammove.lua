@@ -8,6 +8,8 @@ local extent = 5;
 local camPos,camExtend;
 local camZooming = true;
 
+setVar('camZoom', 0)
+
 -- settings is Global!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 function onCreatePost()
     if songName == 'Mortis' then
@@ -235,7 +237,7 @@ function onStepHit()
     end
 
     if camZooming == true then
-        setProperty('defaultCamZoom', zoom);            
+        setProperty('defaultCamZoom', zoom + getVar('camZoom'));            
     end
 end
 

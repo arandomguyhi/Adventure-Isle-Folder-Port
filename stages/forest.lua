@@ -181,6 +181,15 @@ function onBeatHit()
 end
 
 function onStepHit()
+	if curStep == 288 then
+		setVar('camZoom', 0.5)
+	elseif curStep == 416 then
+		setVar('camZoom', 1)
+	elseif curStep == 480 then
+		setProperty('camZooming', false)
+		doTweenZoom('firstzoom', 'camGame', getProperty('defaultCamZoom')+0.5, 2, 'sineIn')
+	end
+
     if curStep == 572 then
         setProperty('back1P.alpha', 1)
         playAnim('back1P', 'anim')
@@ -193,8 +202,11 @@ function onStepHit()
     elseif curStep == 584 then
         setProperty('pretty.alpha', 1)
         playAnim('pretty', 'anim')
+	setVar('camZoom', 0)
     elseif curStep == 624 then
         setProperty('blackGraphic.alpha', 0.001)
+	elseif curStep == 735 then
+		doTweenZoom('oi', 'camGame', getProperty('defaultCamZoom')+1, 1.5, 'quadIn')
     end
 
     if curStep == 912 then
@@ -319,13 +331,13 @@ function onStepHit()
     end
 
 	if curStep == 4039 then
-		doTweenZoom('camGameZoom', 'camGame', 5.3, 1, 'cubeIn')
+		doTweenZoom('camGameZoom', 'camGame', 5.3, 0.75, 'cubeIn')
 	elseif curStep == 4048 then
 		cameraFlash('camGame', 'bce004', 1)
 		setProperty('entrance.alpha', 0.001)
 		setProperty('dad.alpha', 0.001)
 		setProperty('camZooming', false)
-		startTween('DCZtween', 'game', {defaultCamZoom = 3.5}, 25, {ease = 'quadIn'})
+		doTweenZoom('finalzoomtween', 'camGame', 3.5, 28, 'quadIn')
 	elseif curStep == 4284 then
 		doTweenAlpha('endsong', 'camHUD', 0.001, 2)
 	end
@@ -340,4 +352,11 @@ function onEvent(n,v1,v2)
             setProperty('camHUD.zoom', getProperty('camHUD.zoom') + 0.01)
         end
     end
+end
+
+function onTweenCompleted(tag)
+	if tag == 'firstzoom' then
+		setProperty('camZooming', true)
+		setVar('camZoom', 1.5)
+	end
 end
