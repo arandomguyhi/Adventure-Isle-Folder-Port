@@ -2,9 +2,8 @@ local imgPath = 'stages/trinity/'
 
 luaDebugMode = true
 function onCreate()
-    addHaxeLibrary('FlxBar', 'flixel.ui')
-    addHaxeLibrary('FlxBarFillDirection', 'flixel.ui')
     addHaxeLibrary('FlxBackdrop', 'flixel.addons.display')
+    addHaxeLibrary('FlxFlicker', 'flixel.effects')
 
     setProperty('skipCountdown', true)
 
@@ -113,8 +112,22 @@ function onCreate()
     makeGraphic('blackGraphic', screenWidth, screenHeight, 'ffffff')
     setScrollFactor('blackGraphic', 0, 0)
     screenCenter('blackGraphic', 'XY')
+    setObjectCamera('blackGraphic', 'hud')
     addLuaSprite('blackGraphic', true)
     setProperty('blackGraphic.color', getColorFromHex('000000'))
+
+    -- song title shit
+    makeLuaSprite('mortisTitle', 'titlecards/mortis', 0, 0)
+    setObjectCamera('mortisTitle', 'camHUD')
+    screenCenter('mortisTitle', 'XY')
+    addLuaSprite('mortisTitle', true)
+    setProperty('mortisTitle.alpha', 0.001)
+
+    makeLuaSprite('mortisEvilTitle', 'titlecards/evilmortis', 0, 0)
+    setObjectCamera('mortisEvilTitle', 'camHUD')
+    screenCenter('mortisEvilTitle', 'XY')
+    addLuaSprite('mortisEvilTitle', true)
+    setProperty('mortisEvilTitle.visible', false)
 
     setProperty('camZooming', true)
     setProperty('health', 2)
@@ -125,10 +138,6 @@ function onCreatePost()
     setProperty('comboGroup.visible', false)
     setProperty('uiGroup.visible', false)
     setProperty('gf.alpha', 0.001)
-
-    for i = 0,3 do
-        setPropertyFromGroup('opponentStrums', i, 'visible', false)
-    end
 end
 
 function onSpawnNote()
@@ -167,8 +176,24 @@ function goodNoteHit(i,d,t,s)
     end
 end
 
+
+-- ALL SONG EVENTS BELOW
+local allowStart = false
+function onStartCountdown()
+    if not allowStart then
+        allowStart = true
+        doTweenAlpha('mortistween', 'mortisTitle', 1, 1)
+        return Function_Stop
+    end
+    return Function_Continue
+end
+
 function onSongStart()
     doTweenAlpha('bxl', 'blackGraphic', 0.001, 4, 'linear')
+
+    for i = 0,3 do
+        setPropertyFromGroup('strumLineNotes', i, 'visible', false)
+    end
 end
 
 function onBeatHit()
@@ -183,6 +208,7 @@ end
 function onStepHit()
 	if curStep == 288 then
 		setVar('camZoom', 0.5)
+        setObjectCamera('blackGraphic', 'game')
 	elseif curStep == 416 then
 		setVar('camZoom', 1)
 	elseif curStep == 480 then
@@ -359,4 +385,18 @@ function onTweenCompleted(tag)
 		setProperty('camZooming', true)
 		setVar('camZoom', 1.5)
 	end
+    if tag == 'mortistween' then
+        runHaxeCode([[
+            FlxFlicker.flicker(game.getLuaObject('mortisTitle'), 1, 0.09, false);
+            FlxFlicker.flicker(game.getLuaObject('mortisEvilTitle'), 1, 0.09, true);
+        ]])
+        runTimer('titleTimer', 2)
+    end
+end
+
+function onTimerCompleted(tag)
+    if tag == 'titleTimer' then
+        doTweenAlpha('endTitle', 'mortisEvilTitle', 0.001, 1) runTimer('startSong', 1)
+    elseif tag == 'startSong' then
+        startCountdown()end
 end
