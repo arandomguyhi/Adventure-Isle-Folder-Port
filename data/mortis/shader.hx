@@ -1,6 +1,6 @@
 // easy as helll
 
-if (buildTarget == 'android'){ return; }
+if (buildTarget == 'windows'){/*oi*/}else{return;}
 var bzl;
 function onCreate() {
     game.initLuaShader('vcr');

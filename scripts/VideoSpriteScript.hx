@@ -4,7 +4,7 @@ import hxcodec.flixel.FlxVideo;
 
 var cacheList:Array<String> = ['mortis'];
 
-if(buildTarget == 'android'){ return; }
+if (buildTarget == 'windows'){/*oi*/}else{return;}
 
 function onCreate():Void
 {

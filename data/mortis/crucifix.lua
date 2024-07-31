@@ -4,7 +4,6 @@ local crucifixColor = 'bar'
 
 luaDebugMode = true
 function onCreate()
-    initLuaShader('colorReplace')
     addHaxeLibrary('FlxRect', 'flixel.math')
 
     for i = 1,2 do
@@ -16,13 +15,17 @@ function onCreate()
     end
     setObjectOrder('crucifix1', getObjectOrder('crucifix2'))
 
-    setSpriteShader('boyfriend', 'colorReplace')
-    setShaderFloatArray('boyfriend', 'u_colorToReplace', {255 / 255, 216 / 255, 0 / 255})
+    if shadersEnabled then
+        initLuaShader('colorReplace')
+
+        setSpriteShader('boyfriend', 'colorReplace')
+        setShaderFloatArray('boyfriend', 'u_colorToReplace', {255 / 255, 216 / 255, 0 / 255})
+    end
 end
 
 function onEvent(n,v1,v2)
     if n == 'Change Character' then
-        if v2:find('john') then
+        if v2:find('john') and shadersEnabled then
             removeSpriteShader('boyfriend', 'colorReplace')
             setSpriteShader('boyfriend', 'colorReplace')
         end
@@ -43,7 +46,7 @@ function onUpdate()
         crucifixColor = 'bronze'
         johnCrucifixCol = {179 / 255, 90 / 255, 1 / 255}
     end
-    setShaderFloatArray('boyfriend', 'u_replacementColor', johnCrucifixCol)
+    if shadersEnabled then setShaderFloatArray('boyfriend', 'u_replacementColor', johnCrucifixCol)end
 
     for i = 1,2 do
         loadGraphic('crucifix'..i, 'healthbars/trinity/'..crucifixColor..'-p'..i, false)
