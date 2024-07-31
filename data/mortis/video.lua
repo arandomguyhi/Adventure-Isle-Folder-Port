@@ -8,6 +8,7 @@ function onCreate()
 	else
 		createInstance('endCutscene', 'backend.VideoSpriteManager', {0, 0, screenWidth, screenHeight})
 		setObjectCamera('endCutscene', 'camHUD')
+		scaleObject('endCutscene', 2, 2)
 		screenCenter('endCutscene', 'XY')
 		addInstance('endCutscene', true)
 	end
