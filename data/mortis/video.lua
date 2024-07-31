@@ -20,5 +20,6 @@ function onStepHit()
 		else
 			callMethod('endCutscene.startVideo', {videoPath, false})
 		end
+		setProperty('blackGraphic.alpha', 1)
 	end
 end
