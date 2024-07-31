@@ -1,5 +1,6 @@
 // easy as helll
 
+if (!buildTarget == 'windows'){ return; }
 var bzl;
 function onCreate() {
     game.initLuaShader('vcr');
