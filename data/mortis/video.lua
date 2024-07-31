@@ -8,11 +8,15 @@ function onCreate()
 	else
 		createInstance('endCutscene', 'backend.VideoSpriteManager', {0, 0, screenWidth, screenHeight})
 		setObjectCamera('endCutscene', 'camOther')
+		screenCenter('endCutscene', 'XY')
 		addInstance('endCutscene', true)
 	end
 end
 
 function onStepHit()
+	if curStep == 100 then
+		callMethod('endCutscene.startVideo', {videoPath, false})
+	end
 	if curStep == 4288 then
 		if buildTarget == 'windows' then
 			makeVideoSprite('mortisEnd', 'mortis', 0, 0, getVar('pedroCam'), false)
