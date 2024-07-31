@@ -6,19 +6,14 @@ function onCreate()
 	if buildTarget == 'windows' then
 		-- nada
 	else
-		createInstance('endCutscene', 'backend.VideoSpriteManager', {0, 0, screenWidth, screenHeight})
-		setObjectCamera('endCutscene', 'camHUD')
-		scaleObject('endCutscene', 2, 2)
-		screenCenter('endCutscene', 'XY')
+		createInstance('endCutscene', 'backend.VideoSpriteManager', {'0', '0', '1280', '720'})
+		setObjectCamera('endCutscene', getVar('pedroCam'))
+		scaleObject('endCutscene', 1.3, 1.3)
 		addInstance('endCutscene', true)
 	end
 end
 
 function onStepHit()
-	if curStep == 100 then
-		callMethod('endCutscene.startVideo', {videoPath, false})
-		screenCenter('endCutscene', 'XY')
-	end
 	if curStep == 4288 then
 		if buildTarget == 'windows' then
 			makeVideoSprite('mortisEnd', 'mortis', 0, 0, getVar('pedroCam'), false)
