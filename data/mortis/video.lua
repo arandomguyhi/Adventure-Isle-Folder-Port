@@ -20,6 +20,8 @@ function onStepHit()
 		else
 			callMethod('endCutscene.startVideo', {videoPath, false})
 		end
+	end
+	if curStep == 4350 then
 		setProperty('blackGraphic.alpha', 1)
 	end
 end
