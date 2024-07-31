@@ -1,7 +1,8 @@
 // easy as helll
 
+var bzl;
 function onCreate() {
     game.initLuaShader('vcr');
-    var vcrShader = game.createRuntimeShader('vcr');
-    camGame.filters = camHUD.filters = [new ShaderFilter(vcrShader)];
+    bzl = game.createRuntimeShader('vcr');
+    camGame.filters = camHUD.filters = [new ShaderFilter(bzl)];
 }

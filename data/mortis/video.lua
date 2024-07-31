@@ -7,7 +7,7 @@ function onCreate()
 		-- nada
 	else
 		createInstance('endCutscene', 'backend.VideoSpriteManager', {0, 0, screenWidth, screenHeight})
-		setObjectCamera('endCutscene', getVar('pedroCam'))
+		setObjectCamera('endCutscene', 'camOther')
 		addInstance('endCutscene', true)
 	end
 end

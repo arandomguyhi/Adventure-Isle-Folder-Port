@@ -4,6 +4,8 @@ import hxcodec.flixel.FlxVideo;
 
 var cacheList:Array<String> = ['mortis'];
 
+if(buildTarget == 'android'){ return; }
+
 function onCreate():Void
 {
     while (cacheList.length > 0.0)
