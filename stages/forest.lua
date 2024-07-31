@@ -365,7 +365,9 @@ function onStepHit()
 		setProperty('camZooming', false)
 		doTweenZoom('finalzoomtween', 'camGame', 3.5, 28, 'quadIn')
 	elseif curStep == 4284 then
-		doTweenAlpha('endsong', 'camHUD', 0.001, 2)
+        for i = 4,7 do noteTweenAlpha('twn'..i, i, 0.001, 2)end
+        doTweenAlpha('endtween1', 'crucifix1', 0.001, 2)
+        doTweenAlpha('endtween2', 'crucifix2', 0.001, 2)
 	end
 end
 

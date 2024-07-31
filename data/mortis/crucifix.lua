@@ -46,7 +46,9 @@ function onUpdate()
         crucifixColor = 'bronze'
         johnCrucifixCol = {179 / 255, 90 / 255, 1 / 255}
     end
-    if shadersEnabled then setShaderFloatArray('boyfriend', 'u_replacementColor', johnCrucifixCol)end
+    if boyfriendName:find('john') and shadersEnabled then
+        setShaderFloatArray('boyfriend', 'u_replacementColor', johnCrucifixCol)
+    end
 
     for i = 1,2 do
         loadGraphic('crucifix'..i, 'healthbars/trinity/'..crucifixColor..'-p'..i, false)
