@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "MAMA Idle instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				36,
+				44
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "MAMA Left instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-37,
+				17
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "MAMA Up instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-33,
+				-40
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "MAMA Right instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				57,
+				13
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "MAMA Down instance 1",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/tattletail/2d/Tattletail_Mama_FRONT",
+	"position": [
+		580,
+		0
+	],
+	"healthicon": "tattle-mama",
+	"flip_x": false,
+	"healthbar_colors": [
+		98,
+		44,
+		49
+	],
+	"camera_position": [
+		-610,
+		30
+	],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

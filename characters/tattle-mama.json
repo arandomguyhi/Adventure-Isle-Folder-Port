@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				270,
+				90
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "mama idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				270,
+				90
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "mama left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				270,
+				90
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "mama down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				270,
+				90
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "mama up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				270,
+				90
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "mama right",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/tattletail/mama/MAMA",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "tattle-mama",
+	"flip_x": false,
+	"healthbar_colors": [
+		98,
+		44,
+		49
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

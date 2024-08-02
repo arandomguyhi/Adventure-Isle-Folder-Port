@@ -1,0 +1,21 @@
+{
+	"songs": [
+		["No More", "ds-dog-real", [146, 113, 253]]
+	],
+
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"weekBackground": "stage",
+
+	"storyName": "Tattletale",
+	"weekBefore": "",
+	"weekName": "thumper-tattletale",
+	"difficulties": "Normal",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

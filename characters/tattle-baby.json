@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-19,
+				245
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "idle",
+			"loop": true,
+			"name": "BABY IDLE"
+		},
+		{
+			"offsets": [
+				-20,
+				244
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "BABY LEFT"
+		},
+		{
+			"offsets": [
+				-20,
+				244
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "BABY DOWN"
+		},
+		{
+			"offsets": [
+				-20,
+				249
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singUP",
+			"loop": false,
+			"name": "BABY UP"
+		},
+		{
+			"offsets": [
+				-16,
+				251
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "BABY RIGHT"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/tattletail/baby/tattletailbaby",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "face",
+	"flip_x": false,
+	"healthbar_colors": [
+		161,
+		161,
+		161
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

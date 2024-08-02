@@ -1,0 +1,316 @@
+{
+	"song": {
+		"events": [
+			[
+				0,
+				[
+					[
+						"ChangeBarSize",
+						"1",
+						"35"
+					],
+					[
+						"",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				28950,
+				[
+					[
+						"",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				39150,
+				[
+					[
+						"Teleport Mama",
+						"",
+						""
+					],
+					[
+						"",
+						"2",
+						""
+					]
+				]
+			],
+			[
+				58350,
+				[
+					[
+						"Teleport Mama",
+						"",
+						""
+					]
+				]
+			],
+			[
+				62400,
+				[
+					[
+						"Teleport Mama",
+						"",
+						""
+					]
+				]
+			],
+			[
+				64800,
+				[
+					[
+						"Teleport Mama",
+						"",
+						""
+					]
+				]
+			],
+			[
+				67950,
+				[
+					[
+						"Teleport Mama",
+						"",
+						""
+					]
+				]
+			],
+			[
+				73200,
+				[
+					[
+						"Teleport Mama",
+						"",
+						""
+					]
+				]
+			],
+			[
+				127524.489678238,
+				[
+					[
+						"Teleport Mama",
+						"",
+						""
+					]
+				]
+			],
+			[
+				149041.731057548,
+				[
+					[
+						"Teleport Mama",
+						"",
+						""
+					]
+				]
+			],
+			[
+				162283.110367893,
+				[
+					[
+						"Teleport Mama",
+						"",
+						""
+					]
+				]
+			],
+			[
+				189696.903471341,
+				[
+					[
+						"",
+						"3",
+						""
+					]
+				]
+			],
+			[
+				195386.558643755,
+				[
+					[
+						"",
+						"4",
+						""
+					]
+				]
+			],
+			[
+				198696.903471341,
+				[
+					[
+						"",
+						"5",
+						""
+					]
+				]
+			],
+			[
+				211938.282781686,
+				[
+					[
+						"Camera Follow Pos",
+						"541",
+						"484"
+					]
+				]
+			],
+			[
+				233455.524160996,
+				[
+					[
+						"Change Character",
+						"BF",
+						"ruby-far"
+					],
+					[
+						"Change Character",
+						"Dad",
+						"mama-front"
+					],
+					[
+						"Camera Follow Pos",
+						"433",
+						"361"
+					],
+					[
+						"Change Character",
+						"GF",
+						"tattlebig"
+					]
+				]
+			],
+			[
+				235110.696574789,
+				[
+					[
+						"",
+						"6",
+						""
+					]
+				]
+			],
+			[
+				241731.386229962,
+				[
+					[
+						"Change Character",
+						"Dad",
+						"mama-far"
+					],
+					[
+						"Change Character",
+						"BF",
+						"ruby-front"
+					],
+					[
+						"",
+						"7",
+						""
+					],
+					[
+						"Play Animation",
+						"nomoremama",
+						""
+					]
+				]
+			],
+			[
+				245041.731057548,
+				[
+					[
+						"Play Animation",
+						"nomoremama",
+						""
+					]
+				]
+			],
+			[
+				248352.075885134,
+				[
+					[
+						"Change Character",
+						"BF",
+						"ruby-far"
+					],
+					[
+						"Change Character",
+						"Dad",
+						"mama-front"
+					],
+					[
+						"",
+						"6",
+						""
+					],
+					[
+						"Play Animation",
+						"nomoremama",
+						""
+					]
+				]
+			],
+			[
+				251662.42071272,
+				[
+					[
+						"Play Animation",
+						"nomoremama",
+						""
+					]
+				]
+			],
+			[
+				254972.765540307,
+				[
+					[
+						"Change Character",
+						"Dad",
+						"mama-far"
+					],
+					[
+						"Change Character",
+						"BF",
+						"ruby-front"
+					],
+					[
+						"",
+						"7",
+						""
+					],
+					[
+						"Play Animation",
+						"nomoremama",
+						""
+					]
+				]
+			],
+			[
+				258283.110367893,
+				[
+					[
+						"Play Animation",
+						"nomoremama",
+						""
+					]
+				]
+			],
+			[
+				264490.006919617,
+				[
+					[
+						"",
+						"8",
+						""
+					]
+				]
+			]
+		]
+	}
+}

@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "MAMA Far Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				3
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "MAMA Far Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-7,
+				26
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "MAMA Far Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-3,
+				10
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "MAMA Far Right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				6,
+				-10
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "MAMA Far Down",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/tattletail/2d/Tattletail_Mama_FAR",
+	"position": [
+		700,
+		180
+	],
+	"healthicon": "tattle-mama",
+	"flip_x": false,
+	"healthbar_colors": [
+		98,
+		44,
+		49
+	],
+	"camera_position": [
+		-330,
+		90
+	],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": false
+}
