@@ -1,0 +1,21 @@
+{
+	"songs": [
+		["WideSpread", "smile-dog", [146, 113, 253]]
+	],
+
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"weekBackground": "stage",
+
+	"storyName": "Yume Nikki",
+	"weekBefore": "thumper-duckseason",
+	"weekName": "thumper-smiledog",
+	"difficulties": "Normal",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

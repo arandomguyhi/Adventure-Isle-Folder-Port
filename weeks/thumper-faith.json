@@ -13,6 +13,7 @@
 	"storyName": "Faith: The Unholy Trinity",
 	"weekBefore": "thumper-yumenikki",
 	"weekName": "thumper-faith",
+	"difficulties": "Normal",
 	"startUnlocked": true,
 
 	"hideStoryMode": false,

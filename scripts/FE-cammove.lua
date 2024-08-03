@@ -183,11 +183,11 @@ function onUpdate(elapsed)
             end
 
             if boyfriendName == 'ruby-front' then
-                zoom = 0.9;
+                zoom = 1;
             end
 
             if boyfriendName == 'ruby-far' then
-                zoom = 0.9;
+                zoom = 1;
             end
         end 
     end

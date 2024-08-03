@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				258,
+				104
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Fuckass Dog Up"
+		},
+		{
+			"offsets": [
+				172,
+				-203
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Fuckass Dog Down"
+		},
+		{
+			"offsets": [
+				374,
+				-14
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Fuckass Dog Left"
+		},
+		{
+			"offsets": [
+				-11,
+				-16
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Fuckass Dog Right"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Fuckass Dog Idle",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/SMILEDOG/Goofy_Dog",
+	"position": [
+		0,
+		240
+	],
+	"healthicon": "haha-dog",
+	"flip_x": false,
+	"healthbar_colors": [
+		246,
+		230,
+		90
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}
