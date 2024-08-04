@@ -15,6 +15,7 @@ function onSongStart()
 		setPropertyFromGroup('opponentStrums', 2, 'alpha', 0)
 		setPropertyFromGroup('opponentStrums', 3, 'alpha', 0)
 	end
+	runTimer('BZL', 3)
 end
 
 function onStepHit()
@@ -30,6 +31,14 @@ function onStepHit()
 		noteTweenX("moveback4", 7,defaultPlayerStrumX3, 1.0, "sineInOut")
 		for i = 4,7 do
 			noteTweenAlpha("reappear"..i, i,1, 4.0, "sineInOut")
+		end
+	end
+end
+
+function onTimerCompleted(tag)
+	if tag == 'BZL' then
+		for i, cu in pairs({'ipc', 'topwall'}) do
+			doTweenColor('coltwn'..i, cu, '000000', 5)
 		end
 	end
 end
