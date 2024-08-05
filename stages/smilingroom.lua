@@ -1,7 +1,7 @@
 local imgPath = 'stages/spread/'
 local stwCount = 1
 
-local stage1 = {'photoback', 'topphoto', 'photostatic', 'dad'}
+local stage1 = {'photoback', 'topphoto', 'dad', 'photostatic'}
 
 luaDebugMode = true
 function onCreate()
@@ -18,19 +18,6 @@ function onCreate()
     addAnimationByPrefix('ipc', 'anim', 'transition', 12, false)
     scaleObject('ipc', 1.01, 1.02)
     addLuaSprite('ipc', true)
-
-    makeLuaSprite('photoback', imgPath..'backphoto', 390, 530)
-    addLuaSprite('photoback')
-
-    makeAnimatedLuaSprite('topphoto', imgPath..'topphoto', 325, 550)
-    addAnimationByPrefix('topphoto', 'idle', 'topphoto', 24, true)
-    addLuaSprite('topphoto', true)
-    --setProperty('topwall.color', 0x000000)
-
-    makeAnimatedLuaSprite('photostatic', imgPath..'photostatic', 450, 564)
-    addAnimationByPrefix('photostatic', 'idle', 'loop', 24, true)
-    addLuaSprite('photostatic', true)
-    setProperty('photostatic.alpha', 0.2)
 
     makeAnimatedLuaSprite('vhs', imgPath..'intro/vhstop', 0, 0)
     addAnimationByPrefix('vhs', 'anim', 'vhs1', 24, false)
@@ -94,6 +81,39 @@ function onCreate()
     setProperty('smileMail.alpha', 0.001)
     addLuaSprite('smileMail', true)
 
+    makeLuaSprite('sendHitbox', nil, 331, 452.5)
+    makeGraphic('sendHitbox', 58.5, 20, '000000')
+    setObjectCamera('sendHitbox', 'other') -- kys mouse3
+    setProperty('sendHitbox.alpha', 0.001)
+    setProperty('sendHitbox.visible', false)
+    addLuaSprite('sendHitbox')
+
+    makeLuaSprite('deleteHitbox', nil, 658, 450)
+    makeGraphic('deleteHitbox', 18, 25, '000000')
+    setObjectCamera('deleteHitbox', 'other') -- kys mouse4
+    setProperty('deleteHitbox.alpha', 0.001)
+    setProperty('deleteHitbox.visible', false)
+    addLuaSprite('deleteHitbox')
+
+    makeAnimatedLuaSprite('pcGlitch', imgPath..'intro/pcglitch', 295, 550)
+    addAnimationByPrefix('pcGlitch', 'idle', 'pcglitch', 12, false)
+    scaleObject('pcGlitch', 1.01, 0.87)
+    addLuaSprite('pcGlitch')
+    setProperty('pcGlitch.alpha', 0.001)
+
+    makeLuaSprite('photoback', imgPath..'backphoto', 390, 530)
+    addLuaSprite('photoback')
+
+    makeAnimatedLuaSprite('topphoto', imgPath..'topphoto', 325, 550)
+    addAnimationByPrefix('topphoto', 'idle', 'topphoto', 24, true)
+    addLuaSprite('topphoto', true)
+    --setProperty('topwall.color', 0x000000)
+
+    makeAnimatedLuaSprite('photostatic', imgPath..'photostatic', 450, 564)
+    addAnimationByPrefix('photostatic', 'idle', 'loop', 24, true)
+    addLuaSprite('photostatic', true)
+    setProperty('photostatic.alpha', 0.15)
+
     -- THE FINAL INTRO
     makeAnimatedLuaSprite("dogkill", 'stages/spread/WidespreadEnding/dogkill',-100,250)
     addAnimationByPrefix("dogkill", "jump", "jump",24,false)
@@ -137,7 +157,7 @@ function onCreatePost()
     addLuaSprite('vig', true)
 
     for _, objs in pairs(stage1) do
-        setProperty(objs..'.alpha', 0.001)
+        setProperty(objs..'.visible', false)
     end
 end
 
@@ -182,17 +202,17 @@ end
 
 local canShow = false
 local canSelect = false
+local canStart = false
 function onUpdate()
-    if getProperty('controls.ACCEPT') then
-        startCountdown()
-    end
-
     if getProperty('turnOn.animation.finished') and canShow then
         setProperty('turnOn.alpha', 0.001)
         setProperty('wallpaper.alpha', 1)
         setProperty('apps.alpha', 1)
     end
 
+    if mouseReleased()then playSound('windows/click', 1000)end
+
+    -- all hitbox shit
     if canSelect and mouseOverlaps('appHitbox', 'camOther') then
         setProperty('appHitbox.alpha', 0.5)
         if mouseReleased() then
@@ -209,8 +229,16 @@ function onUpdate()
         setProperty('smileHitbox.visible', false)
         doTweenAlpha('windowAlpha', 'smileMail', 1, 0.1)
         playAnim('smileMail', 'enter')
+
+        setProperty('sendHitbox.visible', true)
+        setProperty('deleteHitbox.visible', true)
     end
 
+    if getProperty('sendHitbox.visible') and mouseOverlaps('sendHitbox', 'other') and mouseReleased() then
+        windowToSong()
+    end
+
+    -- window anim shit
     if getProperty('mailWindow.animation.curAnim.name') == 'enter' and
     getProperty('mailWindow.animation.curAnim.finished') then
         playAnim('mailWindow', 'window', true)
@@ -218,6 +246,16 @@ function onUpdate()
     if getProperty('smileMail.animation.curAnim.name') == 'enter' and
     getProperty('smileMail.animation.curAnim.finished') then
         playAnim('smileMail', 'idle', true)
+    end
+    if getProperty('pcGlitch.animation.finished') and canStart then
+        startCountdown()
+
+        for _, objs in pairs(stage1) do
+            setProperty(objs..'.visible', true)
+        end
+
+        setProperty('pcBlack.alpha', 0.001)
+        setProperty('pcGlitch.alpha', 0.001)
     end
 end
 
@@ -281,7 +319,21 @@ function onTweenCompleted(tag)
     if tag == 'zoomTween1' then
         canSelect = true
         setProperty('appHitbox.visible', true)
+        removeLuaSprite('turnOn')
     end
+end
+
+function windowToSong()
+    local everyObj = {'wallpaper', 'apps', 'mailWindow', 'smileMail'}
+    canStart = true
+
+    for _, cu in pairs(everyObj) do
+        setProperty(cu..'.alpha', 0.001)
+    end
+
+    doTweenZoom('zoomTween2', 'camGame', 1.15, 1, 'sineOut')
+    setProperty('pcGlitch.alpha', 1)
+    playAnim('pcGlitch', 'idle')
 end
 
 function mouseOverlaps(obj, camera)

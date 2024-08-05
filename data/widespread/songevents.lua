@@ -5,6 +5,7 @@ end
 
 function onSongStart()
     doTweenAlpha("readdHUD", "camHUD", 1, 5, 'sineInOut')
+	doTweenZoom('zoomTween3', 'camGame', 1.5, 12, 'sineIn')
     for i = 0,3 do
 		setPropertyFromGroup('playerStrums', 0, 'x', defaultOpponentStrumX0)
 		setPropertyFromGroup('playerStrums', 1, 'x', defaultOpponentStrumX1)
@@ -37,7 +38,7 @@ end
 
 function onTimerCompleted(tag)
 	if tag == 'BZL' then
-		for i, cu in pairs({'ipc', 'topwall'}) do
+		for i, cu in pairs({'ipc', 'topphoto', 'ibg'}) do
 			doTweenColor('coltwn'..i, cu, '000000', 5)
 		end
 	end
