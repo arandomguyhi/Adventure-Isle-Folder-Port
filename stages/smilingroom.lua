@@ -1,7 +1,7 @@
 local imgPath = 'stages/spread/'
 local stwCount = 1
 
-local stage1 = {'photoback', 'topphoto', 'dad', 'photostatic'}
+local stage1 = {'photoback', 'topphoto', 'topphoto2', 'photostatic', 'dad'}
 
 luaDebugMode = true
 function onCreate()
@@ -19,6 +19,7 @@ function onCreate()
     scaleObject('ipc', 1.01, 1.02)
     addLuaSprite('ipc', true)
 
+    --[[
     makeAnimatedLuaSprite('vhs', imgPath..'intro/vhstop', 0, 0)
     addAnimationByPrefix('vhs', 'anim', 'vhs1', 24, false)
     setObjectCamera('vhs', 'other')
@@ -99,10 +100,15 @@ function onCreate()
     addAnimationByPrefix('pcGlitch', 'idle', 'pcglitch', 12, false)
     scaleObject('pcGlitch', 1.01, 0.87)
     addLuaSprite('pcGlitch')
-    setProperty('pcGlitch.alpha', 0.001)
+    setProperty('pcGlitch.alpha', 0.001)]]
 
     makeLuaSprite('photoback', imgPath..'backphoto', 390, 530)
     addLuaSprite('photoback')
+
+    makeLuaSprite('topphoto2', imgPath..'intro/smilestarttop2', 435, 462)
+    scaleObject('topphoto2', 0.19, 0.17)
+    setProperty('topphoto2.alpha', 0.7)
+    addLuaSprite('topphoto2', true)
 
     makeAnimatedLuaSprite('topphoto', imgPath..'topphoto', 325, 550)
     addAnimationByPrefix('topphoto', 'idle', 'topphoto', 24, true)
@@ -112,7 +118,7 @@ function onCreate()
     makeAnimatedLuaSprite('photostatic', imgPath..'photostatic', 450, 564)
     addAnimationByPrefix('photostatic', 'idle', 'loop', 24, true)
     addLuaSprite('photostatic', true)
-    setProperty('photostatic.alpha', 0.15)
+    setProperty('photostatic.alpha', 0.1)
 
     -- THE FINAL INTRO
     makeAnimatedLuaSprite("dogkill", 'stages/spread/WidespreadEnding/dogkill',-100,250)
@@ -142,12 +148,12 @@ function onCreate()
     setObjectCamera('death', 'uiCam')
     addLuaSprite("death", false)
 
-    makeLuaSprite('blackGraphic', nil)
+    --[[makeLuaSprite('blackGraphic', nil)
     makeGraphic('blackGraphic', screenWidth, screenHeight, 'ffffff')
     setScrollFactor('blackGraphic', 0, 0)
     screenCenter('blackGraphic', 'XY')
     addLuaSprite('blackGraphic', true)
-    setProperty('blackGraphic.color', getColorFromHex('000000'))
+    setProperty('blackGraphic.color', getColorFromHex('000000'))]]
 end
 
 function onCreatePost()
@@ -156,9 +162,9 @@ function onCreatePost()
     screenCenter('vig', 'XY')
     addLuaSprite('vig', true)
 
-    for _, objs in pairs(stage1) do
+    --[[for _, objs in pairs(stage1) do
         setProperty(objs..'.visible', false)
-    end
+    end]]
 end
 
 function onEvent(eventName, value1, value2)
@@ -177,14 +183,14 @@ end
 local startSong = false;
 local finishSong = false;
 
-function onStartCountdown()
+--[[function onStartCountdown()
     if not startSong then
         startSong = true
         runTimer('pcCutscene', .5)
         return Function_Stop
     end
     return Function_Continue
-end
+end]]
 
 function onEndSong()
     if thirdeye == true then
@@ -204,7 +210,7 @@ local canShow = false
 local canSelect = false
 local canStart = false
 function onUpdate()
-    if getProperty('turnOn.animation.finished') and canShow then
+    --[[if getProperty('turnOn.animation.finished') and canShow then
         setProperty('turnOn.alpha', 0.001)
         setProperty('wallpaper.alpha', 1)
         setProperty('apps.alpha', 1)
@@ -256,7 +262,7 @@ function onUpdate()
 
         setProperty('pcBlack.alpha', 0.001)
         setProperty('pcGlitch.alpha', 0.001)
-    end
+    end]]
 end
 
 function onTimerCompleted(tag)
@@ -296,7 +302,7 @@ function onTimerCompleted(tag)
         endSong()
     end
 
-    if tag == 'pcCutscene' then
+   --[[ if tag == 'pcCutscene' then
         doTweenAlpha('hiworld', 'blackGraphic', 0.001, 0.5)
         setProperty('turnOn.alpha', 1)
 
@@ -312,7 +318,7 @@ function onTimerCompleted(tag)
         playSound('windows/XP')
         canShow = true
         doTweenAlpha('lolaou', 'vhs', 0.001, 0.5)
-    end
+    end]]
 end
 
 function onTweenCompleted(tag)
