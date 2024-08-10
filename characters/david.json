@@ -1,0 +1,124 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				5,
+				-6
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "noteLeft"
+		},
+		{
+			"offsets": [
+				-20,
+				-51
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "noteDown"
+		},
+		{
+			"offsets": [
+				-46,
+				27
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "noteUp"
+		},
+		{
+			"offsets": [
+				-48,
+				-7
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "noteRight"
+		},
+		{
+			"offsets": [
+				7,
+				19
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "noteMissLeft"
+		},
+		{
+			"offsets": [
+				-15,
+				-19
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "noteMissDown"
+		},
+		{
+			"offsets": [
+				-46,
+				27
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "noteMissUp"
+		},
+		{
+			"offsets": [
+				-44,
+				22
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "noteMissRight"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": true,
+	"image": "characters/blankChar",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "ds-david",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		230,
+		49
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

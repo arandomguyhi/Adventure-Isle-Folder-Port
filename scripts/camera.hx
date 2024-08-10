@@ -16,6 +16,11 @@ function onCreate(){
 }
 
 function onCreatePost(){
-    game.getLuaObject('topBar').camera = uiCam;
-    game.getLuaObject('bottomBar').camera = uiCam;
+    var topBar = game.getLuaObject('topBar');
+    var bottomBar = game.getLuaObject('bottomBar');
+    for (bars in [topBar, bottomBar]){
+        if (game.modchartSprites.exists(bars)) {
+            bars.camera = uiCam;
+        }
+    }
 }

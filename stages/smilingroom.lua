@@ -148,6 +148,12 @@ function onCreate()
     setObjectCamera('death', 'uiCam')
     addLuaSprite("death", false)
 
+    runHaxeCode([[
+        var oi = game.getLuaObject();
+        for (spr in [oi('endbg1', 'endbg2', 'death')])
+            spr.camera = getVar('uiCam');
+    ]])
+
     --[[makeLuaSprite('blackGraphic', nil)
     makeGraphic('blackGraphic', screenWidth, screenHeight, 'ffffff')
     setScrollFactor('blackGraphic', 0, 0)

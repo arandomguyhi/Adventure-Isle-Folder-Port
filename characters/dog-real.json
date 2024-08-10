@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Idle"
+		},
+		{
+			"offsets": [
+				-69,
+				-36
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Right"
+		},
+		{
+			"offsets": [
+				-1,
+				-20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Left"
+		},
+		{
+			"offsets": [
+				-50,
+				-102
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Down"
+		},
+		{
+			"offsets": [
+				-40,
+				21
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Up"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/duck_season/Bad_Dog_Sprites",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "ds-dog-giant",
+	"flip_x": false,
+	"healthbar_colors": [
+		41,
+		24,
+		16
+	],
+	"camera_position": [
+		-210,
+		-60
+	],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

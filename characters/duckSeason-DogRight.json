@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "D_Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				104,
+				-5
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "D_Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-21,
+				-60
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "D_Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-46,
+				180
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "D_Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-47,
+				-29
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "D_Right",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/duck_season/DogRight",
+	"position": [
+		690,
+		40
+	],
+	"healthicon": "ds-dog-giant",
+	"flip_x": false,
+	"healthbar_colors": [
+		41,
+		24,
+		16
+	],
+	"camera_position": [
+		-690,
+		100
+	],
+	"sing_duration": 6.1,
+	"scale": 0.6,
+	"_editor_isPlayer": false
+}

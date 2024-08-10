@@ -1,0 +1,47 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "Dog shadow wave instance 1"
+		},
+		{
+			"offsets": [
+				-40,
+				6
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "throw",
+			"loop": false,
+			"name": "Dog Shadow wave throw instance 1"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": true,
+	"image": "characters/duck_season/Dog_Shadow_Wave",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "ds-dog-giant",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		0,
+		0
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}
