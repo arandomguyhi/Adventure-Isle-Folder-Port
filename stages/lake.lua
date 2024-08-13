@@ -1,5 +1,10 @@
 local imgPath = 'stages/duck/'
 
+--addCharacterToList('duckSeason-DogLeft', 'dad')
+--addCharacterToList('duckSeason-DogRight', 'dad')
+
+setVar('shooting_mode', false)
+
 luaDebugMode = true
 function onCreate()
     setProperty('isCameraOnForcedPos', true)
@@ -29,4 +34,27 @@ function onCreatePost()
 
     setProperty('camFollow.x', dadCamX)
     setProperty('camFollow.y', dadCamY)
+
+    setProperty('dad.alpha', 0.001)
+end
+
+function onUpdate()
+end
+
+function onEvent(name, value1, value2)
+    if name == 'Teleport Dog' then
+        --[[if value1 == 'left' then
+            triggerEvent('Change Character', 'dad', 'duckSeason-DogLeft')]]
+        if value1 == 'middle' then
+            triggerEvent('Change Character', 'dad', 'duckSeason-DogMiddle')
+        --[[else
+            triggerEvent('Change Character', 'dad', 'duckSeason-DogRight')]]
+        end
+    end
+end
+
+function onStepHit()
+    if curStep == 128 then
+        setVar('camZoom', -.45)
+    end
 end

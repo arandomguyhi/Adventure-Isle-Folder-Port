@@ -19,8 +19,8 @@ end
 
 function onUpdate(elapsed)
     --cam zooms depending on which character
-    if camZooming == true then
-        if mustHitSection == false then
+    if camZooming then
+        if not mustHitSection then
             if dadName == 'smiledog-tv' then
                 zoom = 1;
             end
@@ -197,16 +197,12 @@ function onStepHit()
     if songName == 'Face Me' then
         if curStep == 640 or curStep == 1152 or curStep == 1408 then
             camZooming = false;
-            runHaxeCode([[
-                game.stages[0].shootingmode = true;
-            ]])
+            setVar('shooting_mode', true)
         end
 
         if curStep == 880 or curStep == 1200 or curStep == 1648 then
             camZooming = true;
-            runHaxeCode([[
-                game.stages[0].shootingmode = false;
-            ]])
+            setVar('shooting_mode', false)
         end
     end
 
@@ -217,7 +213,6 @@ function onStepHit()
 
         if curStep == 1704 then
             camZooming = true;
-
             customPlrZoom = 0.8
         end
     end
@@ -226,7 +221,6 @@ function onStepHit()
         if curStep == 3968 then
             camZooming = false;
             doTweenZoom('zoomOut', 'camGame', 0.90, 3, 'quadInOut')
-            
         end
     end
 
@@ -236,8 +230,14 @@ function onStepHit()
         end
     end
 
-    if camZooming == true then
-        setProperty('defaultCamZoom', zoom + getVar('camZoom'));            
+    if camZooming then
+        setProperty('defaultCamZoom', zoom + getVar('camZoom'));
+    end
+
+    if not camZooming then
+        setProperty('defaultCamZoom', 0.4);
+    else
+        setProperty('defaultCamZoom', 0.55);
     end
 end
 

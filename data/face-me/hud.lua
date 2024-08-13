@@ -1,24 +1,28 @@
 addHaxeLibrary('FlxRect', 'flixel.math')
 
-luaDebugMode = true
+setProperty('skipArrowStartTween', true)
+
 function onCreate()
     makeLuaSprite('base', 'healthbars/duck/base', 0, 609.5)
     setObjectCamera('base', 'hud')
     scaleObject('base', 0.5, 0.5)
     screenCenter('base', 'X')
     addLuaSprite('base')
+    setProperty('base.alpha', 0.001)
 
     makeLuaSprite('duckBarP2', 'healthbars/duck/duck-p2', 0, 630)
     setObjectCamera('duckBarP2', 'hud')
     scaleObject('duckBarP2', 0.51, 0.51)
     screenCenter('duckBarP2', 'X')
     addLuaSprite('duckBarP2')
+    setProperty('duckBarP2.alpha', 0.001)
 
     makeLuaSprite('duckBarP1', 'healthbars/duck/duck-p1', 0, 630)
     setObjectCamera('duckBarP1', 'hud')
     scaleObject('duckBarP1', 0.51, 0.51)
     screenCenter('duckBarP1', 'X')
     addLuaSprite('duckBarP1')
+    setProperty('duckBarP1.alpha', 0.001)
 
     setProperty('healthGain', 0)
 end
@@ -28,11 +32,10 @@ function onCreatePost()
 
     for i = 0,3 do
         setPropertyFromGroup('strumLineNotes', i, 'visible', false)
+        setProperty('strumLineNotes.members['.. i+4 .. '].alpha', 0.001)
     end
 end
 
-local isHurt = false
-local isDogHurt = false
 function onUpdatePost()
     runHaxeCode([[
         var scaleValue = 1.9608;
@@ -41,6 +44,20 @@ function onUpdatePost()
 
         duckBar.clipRect = new FlxRect(duckBar.width*scaleValue - barWidth, 0, barWidth, duckBar.height*scaleValue);
     ]])
+end
+
+function onStepHit()
+    if curStep == 64 then
+        for i, hud in ipairs({'base', 'duckBarP2', 'duckBarP1', 'dad'}) do
+            startTween('tweencoiso'..i, hud, {alpha = 1}, 0.5, {ease = 'sineInOut'})
+            noteTweenAlpha('notealpha'..i+3, i+3, 1, 0.5, 'sineInOut')
+        end
+    end
+end
+
+function onCountdownTick(c)
+    local countSpr = {'countdownReady', 'countdownSet', 'countdownGo'}
+    setProperty(countSpr[c]..'.visible', false)
 end
 
 function goodNoteHit(i,d,t,s)
