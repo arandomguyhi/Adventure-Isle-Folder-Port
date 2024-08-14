@@ -234,10 +234,12 @@ function onStepHit()
         setProperty('defaultCamZoom', zoom + getVar('camZoom'));
     end
 
-    if not camZooming then
-        setProperty('defaultCamZoom', 0.4);
-    else
-        setProperty('defaultCamZoom', 0.55);
+    if songName:lower() == 'face me' then
+        if not camZooming then
+            setProperty('defaultCamZoom', 0.4);
+        else
+            setProperty('defaultCamZoom', 0.55);
+        end
     end
 end
 
