@@ -7,7 +7,6 @@ setVar('shooting_mode', false)
 
 luaDebugMode = true
 function onCreate()
-    setProperty('isCameraOnForcedPos', true)
     setVar('camZoom', -.5)
 
     makeLuaSprite('sky', imgPath..'sky', 0, 0)
@@ -29,12 +28,6 @@ function onCreate()
 end
 
 function onCreatePost()
-    dadCamX = getMidpointX('dad') + 150 + getProperty('dad.cameraPosition[0]') + getProperty('opponentCameraOffset[0]')
-    dadCamY = getMidpointY('dad') - 100 + getProperty('dad.cameraPosition[1]') + getProperty('opponentCameraOffset[1]')
-
-    setProperty('camFollow.x', dadCamX)
-    setProperty('camFollow.y', dadCamY)
-
     setProperty('dad.alpha', 0.001)
 end
 

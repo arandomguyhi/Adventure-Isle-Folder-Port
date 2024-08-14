@@ -250,6 +250,9 @@ end
 function onUpdatePost(e)
     if getProperty("isCameraOnForcedPos") then return end
 
+    dadCamX = getMidpointX('dad') + 150 + getProperty('dad.cameraPosition[0]') + getProperty('opponentCameraOffset[0]')
+    dadCamY = getMidpointY('dad') - 100 + getProperty('dad.cameraPosition[1]') + getProperty('opponentCameraOffset[1]')
+
     camExtend={0,0}
     for i = 0, 3 do
         if getPropertyFromGroup(mustHitSection and "playerStrums" or "opponentStrums", i, "animation.curAnim.name") == "confirm" then
@@ -267,4 +270,8 @@ function onUpdatePost(e)
     setProperty('cameraSpeed', 2)
 end
 
-function onMoveCamera() camPos = {getProperty("camFollow.x"),getProperty("camFollow.y")} end
+function onMoveCamera() camPos = {
+    (songName:lower() == 'face me' and dadCamX or getProperty("camFollow.x")),
+    (songName:lower() == 'face me' and dadCamY or getProperty("camFollow.y"))
+} 
+end
