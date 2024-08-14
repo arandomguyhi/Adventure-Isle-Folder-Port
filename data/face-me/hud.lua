@@ -29,6 +29,7 @@ end
 
 function onCreatePost()
     setProperty('uiGroup.visible', false)
+    setProperty('comboGroup.visible', false)
 
     for i = 0,3 do
         setPropertyFromGroup('strumLineNotes', i, 'visible', false)
