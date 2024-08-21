@@ -2,8 +2,6 @@ local dogPath = 'characters/duck_season/'
 
 luaDebugMode = true
 function onCreate()
-    runHaxeCode("FlxG.mouse.load(Paths.image('stages/duck/crosshairTarget').bitmap, 0.5, -65, -50);")
-
     for i = 1,2 do -- testing with 2 sprites for now
         makeAnimatedLuaSprite('dogFront'..i, dogPath..'Dog_Shadow_Laugh')
         addAnimationByPrefix('dogFront'..i, 'idle', 'Dog Shadow Laugh instance 1', 24, true)
@@ -33,6 +31,7 @@ function onCreate()
 	setProperty('dogLeft'..i..'.visible', false)
 	setProperty('dogRight'..i..'.visible', false)
     end
+    runHaxeCode("FlxG.mouse.load(Paths.image('stages/duck/crosshairTarget').bitmap, 0.5, -70, -50);")
 end
 
 function onUpdate(elapsed)
@@ -42,6 +41,8 @@ function onUpdate(elapsed)
 	setPropertyFromClass('flixel.FlxG', 'mouse.visible', false)
     end
 end
+
+local dogCount = 0
 function onEvent(name, value1, value2)
     if name == 'DogSpawn' then
 	for d = 1,2 do
@@ -52,18 +53,21 @@ function onEvent(name, value1, value2)
 	    local dogVis = getProperty(doguin..'.visible')
 	    setProperty(doguin..'.visible', (dogVis and true or true)) -- im so smart hahah
 
+	    dogCount = dogCount + 1
+
 	    if doguin == 'dogRight1' or doguin == 'dogRight2' then
 	    	setProperty('dogRight'..d..'.x', getRandomInt(900,1400))
 	    	setProperty('dogRight'..d..'.y', getRandomInt(1220,1270))
 	    end
 
-            runTimer('tchau', 2)
+            runTimer('attack'..dogCount, 2)
 	end
     end
 end
 
 function onTimerCompleted(tag)
-    if tag == 'tchau' then
-	setProperty(doguin..'.visible', false)
+    if tag == 'attack'..dogCount then
+	-- i'll make them attack later !!!!
+	debugPrint('attack '..dogCount)
     end
 end
