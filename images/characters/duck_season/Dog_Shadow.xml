@@ -1,65 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <TextureAtlas imagePath="Dog_Shadow.png">
-	<!-- Created using the Spritesheet and XML generator -->
-	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
-	<SubTexture name="Dog Shadow Throw instance 10000" x="1645" y="0" width="377" height="542" frameX="-47" frameY="-20" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10001" x="840" y="0" width="410" height="554" frameX="-2" frameY="-8" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10002" x="840" y="0" width="410" height="554" frameX="-2" frameY="-8" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10003" x="430" y="0" width="410" height="559" frameX="1" frameY="-4" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10004" x="0" y="539" width="410" height="560" frameX="2" frameY="-2" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10005" x="0" y="539" width="410" height="560" frameX="2" frameY="-2" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10006" x="1250" y="0" width="395" height="564" frameX="-18" frameY="2" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10007" x="0" y="0" width="430" height="539" frameX="-60" frameY="-43" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10008" x="0" y="0" width="430" height="539" frameX="-60" frameY="-43" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10009" x="840" y="554" width="404" height="519" frameX="-169" frameY="-60" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10010" x="0" y="1099" width="412" height="520" frameX="-159" frameY="-59" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10011" x="0" y="1099" width="412" height="520" frameX="-159" frameY="-59" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10012" x="430" y="559" width="407" height="509" frameX="-163" frameY="-70" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10013" x="430" y="559" width="407" height="509" frameX="-163" frameY="-70" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10014" x="1250" y="564" width="384" height="497" frameX="-185" frameY="-82" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10015" x="1250" y="564" width="384" height="497" frameX="-185" frameY="-82" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10016" x="1645" y="1039" width="367" height="497" frameX="-202" frameY="-82" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10017" x="1645" y="1039" width="367" height="497" frameX="-202" frameY="-82" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10018" x="1645" y="542" width="367" height="497" frameX="-202" frameY="-82" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10019" x="1645" y="542" width="367" height="497" frameX="-202" frameY="-82" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10020" x="1645" y="542" width="367" height="497" frameX="-202" frameY="-82" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10021" x="1645" y="542" width="367" height="497" frameX="-202" frameY="-82" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10022" x="1645" y="542" width="367" height="497" frameX="-202" frameY="-82" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10023" x="1645" y="542" width="367" height="497" frameX="-202" frameY="-82" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10024" x="1645" y="542" width="367" height="497" frameX="-202" frameY="-82" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10025" x="1645" y="542" width="367" height="497" frameX="-202" frameY="-82" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10026" x="1645" y="542" width="367" height="497" frameX="-202" frameY="-82" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10027" x="1645" y="542" width="367" height="497" frameX="-202" frameY="-82" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10028" x="1645" y="542" width="367" height="497" frameX="-202" frameY="-82" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog Shadow Throw instance 10029" x="1645" y="542" width="367" height="497" frameX="-202" frameY="-82" frameWidth="572" frameHeight="580"/>
-	<SubTexture name="Dog shadow Idle instance 10000" x="2022" y="0" width="316" height="513" frameX="2" frameY="2" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10001" x="2022" y="0" width="316" height="513" frameX="2" frameY="2" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10002" x="2022" y="0" width="316" height="513" frameX="2" frameY="2" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10003" x="2022" y="0" width="316" height="513" frameX="2" frameY="2" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10004" x="2022" y="0" width="316" height="513" frameX="2" frameY="2" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10005" x="2022" y="0" width="316" height="513" frameX="2" frameY="2" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10006" x="2022" y="0" width="316" height="513" frameX="2" frameY="2" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10007" x="730" y="1099" width="318" height="511" frameX="2" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10008" x="730" y="1099" width="318" height="511" frameX="2" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10009" x="730" y="1099" width="318" height="511" frameX="2" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10010" x="730" y="1099" width="318" height="511" frameX="2" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10011" x="730" y="1099" width="318" height="511" frameX="2" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10012" x="730" y="1099" width="318" height="511" frameX="2" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10013" x="730" y="1099" width="318" height="511" frameX="2" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10014" x="412" y="1099" width="318" height="511" frameX="1" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10015" x="412" y="1099" width="318" height="511" frameX="1" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10016" x="412" y="1099" width="318" height="511" frameX="1" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10017" x="412" y="1099" width="318" height="511" frameX="1" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10018" x="412" y="1099" width="318" height="511" frameX="1" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10019" x="412" y="1099" width="318" height="511" frameX="1" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10020" x="412" y="1099" width="318" height="511" frameX="1" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10021" x="412" y="1099" width="318" height="511" frameX="1" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10022" x="412" y="1099" width="318" height="511" frameX="1" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10023" x="2022" y="513" width="316" height="511" frameX="2" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10024" x="2022" y="513" width="316" height="511" frameX="2" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10025" x="2022" y="513" width="316" height="511" frameX="2" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10026" x="2022" y="513" width="316" height="511" frameX="2" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10027" x="2022" y="513" width="316" height="511" frameX="2" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10028" x="2022" y="513" width="316" height="511" frameX="2" frameY="0" frameWidth="316" frameHeight="510"/>
-	<SubTexture name="Dog shadow Idle instance 10029" x="2022" y="513" width="316" height="511" frameX="2" frameY="0" frameWidth="316" frameHeight="510"/>
+	
+	
+	<SubTexture name="Dog Shadow Throw instance 10000" x="822" y="0" width="188" height="271" frameX="-24" frameY="-10" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10001" x="420" y="0" width="205" height="277" frameX="-1" frameY="-4" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10002" x="420" y="0" width="205" height="277" frameX="-1" frameY="-4" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10003" x="215" y="0" width="205" height="279" frameX="0" frameY="-2" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10004" x="0" y="269" width="205" height="280" frameX="1" frameY="-1" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10005" x="0" y="269" width="205" height="280" frameX="1" frameY="-1" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10006" x="625" y="0" width="197" height="282" frameX="-9" frameY="1" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10007" x="0" y="0" width="215" height="269" frameX="-30" frameY="-22" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10008" x="0" y="0" width="215" height="269" frameX="-30" frameY="-22" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10009" x="420" y="277" width="202" height="259" frameX="-85" frameY="-30" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10010" x="0" y="549" width="206" height="260" frameX="-80" frameY="-30" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10011" x="0" y="549" width="206" height="260" frameX="-80" frameY="-30" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10012" x="215" y="279" width="203" height="254" frameX="-82" frameY="-35" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10013" x="215" y="279" width="203" height="254" frameX="-82" frameY="-35" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10014" x="625" y="282" width="192" height="248" frameX="-93" frameY="-41" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10015" x="625" y="282" width="192" height="248" frameX="-93" frameY="-41" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10016" x="822" y="519" width="183" height="248" frameX="-101" frameY="-41" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10017" x="822" y="519" width="183" height="248" frameX="-101" frameY="-41" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10018" x="822" y="271" width="183" height="248" frameX="-101" frameY="-41" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10019" x="822" y="271" width="183" height="248" frameX="-101" frameY="-41" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10020" x="822" y="271" width="183" height="248" frameX="-101" frameY="-41" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10021" x="822" y="271" width="183" height="248" frameX="-101" frameY="-41" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10022" x="822" y="271" width="183" height="248" frameX="-101" frameY="-41" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10023" x="822" y="271" width="183" height="248" frameX="-101" frameY="-41" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10024" x="822" y="271" width="183" height="248" frameX="-101" frameY="-41" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10025" x="822" y="271" width="183" height="248" frameX="-101" frameY="-41" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10026" x="822" y="271" width="183" height="248" frameX="-101" frameY="-41" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10027" x="822" y="271" width="183" height="248" frameX="-101" frameY="-41" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10028" x="822" y="271" width="183" height="248" frameX="-101" frameY="-41" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog Shadow Throw instance 10029" x="822" y="271" width="183" height="248" frameX="-101" frameY="-41" frameWidth="286" frameHeight="290" />
+	<SubTexture name="Dog shadow Idle instance 10000" x="1011" y="0" width="158" height="256" frameX="1" frameY="1" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10001" x="1011" y="0" width="158" height="256" frameX="1" frameY="1" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10002" x="1011" y="0" width="158" height="256" frameX="1" frameY="1" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10003" x="1011" y="0" width="158" height="256" frameX="1" frameY="1" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10004" x="1011" y="0" width="158" height="256" frameX="1" frameY="1" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10005" x="1011" y="0" width="158" height="256" frameX="1" frameY="1" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10006" x="1011" y="0" width="158" height="256" frameX="1" frameY="1" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10007" x="365" y="549" width="159" height="255" frameX="1" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10008" x="365" y="549" width="159" height="255" frameX="1" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10009" x="365" y="549" width="159" height="255" frameX="1" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10010" x="365" y="549" width="159" height="255" frameX="1" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10011" x="365" y="549" width="159" height="255" frameX="1" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10012" x="365" y="549" width="159" height="255" frameX="1" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10013" x="365" y="549" width="159" height="255" frameX="1" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10014" x="206" y="549" width="159" height="255" frameX="0" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10015" x="206" y="549" width="159" height="255" frameX="0" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10016" x="206" y="549" width="159" height="255" frameX="0" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10017" x="206" y="549" width="159" height="255" frameX="0" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10018" x="206" y="549" width="159" height="255" frameX="0" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10019" x="206" y="549" width="159" height="255" frameX="0" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10020" x="206" y="549" width="159" height="255" frameX="0" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10021" x="206" y="549" width="159" height="255" frameX="0" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10022" x="206" y="549" width="159" height="255" frameX="0" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10023" x="1011" y="256" width="158" height="255" frameX="1" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10024" x="1011" y="256" width="158" height="255" frameX="1" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10025" x="1011" y="256" width="158" height="255" frameX="1" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10026" x="1011" y="256" width="158" height="255" frameX="1" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10027" x="1011" y="256" width="158" height="255" frameX="1" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10028" x="1011" y="256" width="158" height="255" frameX="1" frameY="0" frameWidth="158" frameHeight="255" />
+	<SubTexture name="Dog shadow Idle instance 10029" x="1011" y="256" width="158" height="255" frameX="1" frameY="0" frameWidth="158" frameHeight="255" />
 </TextureAtlas>

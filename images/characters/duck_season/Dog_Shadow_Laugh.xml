@@ -1,52 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <TextureAtlas imagePath="Dog_Shadow_Laugh.png">
-	<!-- Created using the Spritesheet and XML generator -->
-	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
-	<SubTexture name="Dog Laugh Shadow Throw instance 10000" x="0" y="308" width="319" height="302" frameX="-11" frameY="-11" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10001" x="319" y="308" width="279" height="302" frameX="-18" frameY="-4" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10002" x="319" y="308" width="279" height="302" frameX="-18" frameY="-4" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10003" x="943" y="0" width="261" height="306" frameX="-22" frameY="2" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10004" x="943" y="0" width="261" height="306" frameX="-22" frameY="2" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10005" x="943" y="306" width="261" height="305" frameX="-24" frameY="-1" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10006" x="0" y="610" width="272" height="300" frameX="-23" frameY="-6" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10007" x="635" y="305" width="308" height="295" frameX="2" frameY="-26" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10008" x="635" y="305" width="308" height="295" frameX="2" frameY="-26" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10009" x="635" y="0" width="308" height="305" frameX="-3" frameY="-18" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10010" x="635" y="0" width="308" height="305" frameX="-3" frameY="-18" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10011" x="0" y="0" width="318" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10012" x="0" y="0" width="318" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10013" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10014" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10015" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10016" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10017" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10018" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10019" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10020" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10021" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10022" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10023" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10024" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10025" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10026" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10027" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10028" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Laugh Shadow Throw instance 10029" x="318" y="0" width="317" height="308" frameX="-3" frameY="-15" frameWidth="328" frameHeight="322"/>
-	<SubTexture name="Dog Shadow Laugh instance 10000" x="1204" y="0" width="245" height="304" frameX="-5" frameY="1" frameWidth="249" frameHeight="301"/>
-	<SubTexture name="Dog Shadow Laugh instance 10001" x="1204" y="0" width="245" height="304" frameX="-5" frameY="1" frameWidth="249" frameHeight="301"/>
-	<SubTexture name="Dog Shadow Laugh instance 10002" x="272" y="610" width="252" height="293" frameX="2" frameY="-10" frameWidth="249" frameHeight="301"/>
-	<SubTexture name="Dog Shadow Laugh instance 10003" x="272" y="610" width="252" height="293" frameX="2" frameY="-10" frameWidth="249" frameHeight="301"/>
-	<SubTexture name="Dog Shadow Laugh instance 10004" x="488" y="910" width="251" height="290" frameX="2" frameY="-13" frameWidth="249" frameHeight="301"/>
-	<SubTexture name="Dog Shadow Laugh instance 10005" x="488" y="910" width="251" height="290" frameX="2" frameY="-13" frameWidth="249" frameHeight="301"/>
-	<SubTexture name="Dog Shadow Laugh instance 10006" x="1204" y="608" width="243" height="300" frameX="-5" frameY="-3" frameWidth="249" frameHeight="301"/>
-	<SubTexture name="Dog Shadow Laugh instance 10007" x="1204" y="608" width="243" height="300" frameX="-5" frameY="-3" frameWidth="249" frameHeight="301"/>
-	<SubTexture name="Dog Shadow Laugh instance 10008" x="1204" y="304" width="245" height="304" frameX="-5" frameY="1" frameWidth="249" frameHeight="301"/>
-	<SubTexture name="Dog Shadow Laugh instance 10009" x="1204" y="304" width="245" height="304" frameX="-5" frameY="1" frameWidth="249" frameHeight="301"/>
-	<SubTexture name="Dog Shadow Laugh instance 10010" x="0" y="910" width="244" height="304" frameX="-6" frameY="1" frameWidth="249" frameHeight="301"/>
-	<SubTexture name="Dog Shadow Laugh instance 10011" x="0" y="910" width="244" height="304" frameX="-6" frameY="1" frameWidth="249" frameHeight="301"/>
-	<SubTexture name="Dog Shadow Laugh instance 10012" x="524" y="610" width="252" height="291" frameX="2" frameY="-12" frameWidth="249" frameHeight="301"/>
-	<SubTexture name="Dog Shadow Laugh instance 10013" x="524" y="610" width="252" height="291" frameX="2" frameY="-12" frameWidth="249" frameHeight="301"/>
-	<SubTexture name="Dog Shadow Laugh instance 10014" x="943" y="611" width="252" height="294" frameX="2" frameY="-9" frameWidth="249" frameHeight="301"/>
-	<SubTexture name="Dog Shadow Laugh instance 10015" x="943" y="611" width="252" height="294" frameX="2" frameY="-9" frameWidth="249" frameHeight="301"/>
-	<SubTexture name="Dog Shadow Laugh instance 10016" x="244" y="910" width="244" height="303" frameX="-5" frameY="0" frameWidth="249" frameHeight="301"/>
+	
+	
+	<SubTexture name="Dog Laugh Shadow Throw instance 10000" x="0" y="154" width="159" height="151" frameX="-6" frameY="-6" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10001" x="159" y="154" width="139" height="151" frameX="-9" frameY="-2" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10002" x="159" y="154" width="139" height="151" frameX="-9" frameY="-2" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10003" x="471" y="0" width="130" height="153" frameX="-11" frameY="1" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10004" x="471" y="0" width="130" height="153" frameX="-11" frameY="1" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10005" x="471" y="153" width="130" height="152" frameX="-12" frameY="-1" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10006" x="0" y="305" width="136" height="150" frameX="-12" frameY="-3" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10007" x="317" y="152" width="154" height="147" frameX="1" frameY="-13" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10008" x="317" y="152" width="154" height="147" frameX="1" frameY="-13" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10009" x="317" y="0" width="154" height="152" frameX="-2" frameY="-9" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10010" x="317" y="0" width="154" height="152" frameX="-2" frameY="-9" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10011" x="0" y="0" width="159" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10012" x="0" y="0" width="159" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10013" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10014" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10015" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10016" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10017" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10018" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10019" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10020" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10021" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10022" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10023" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10024" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10025" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10026" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10027" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10028" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Laugh Shadow Throw instance 10029" x="159" y="0" width="158" height="154" frameX="-2" frameY="-8" frameWidth="164" frameHeight="161" />
+	<SubTexture name="Dog Shadow Laugh instance 10000" x="602" y="0" width="122" height="152" frameX="-3" frameY="0" frameWidth="124" frameHeight="150" />
+	<SubTexture name="Dog Shadow Laugh instance 10001" x="602" y="0" width="122" height="152" frameX="-3" frameY="0" frameWidth="124" frameHeight="150" />
+	<SubTexture name="Dog Shadow Laugh instance 10002" x="136" y="305" width="126" height="146" frameX="1" frameY="-5" frameWidth="124" frameHeight="150" />
+	<SubTexture name="Dog Shadow Laugh instance 10003" x="136" y="305" width="126" height="146" frameX="1" frameY="-5" frameWidth="124" frameHeight="150" />
+	<SubTexture name="Dog Shadow Laugh instance 10004" x="244" y="455" width="125" height="145" frameX="1" frameY="-7" frameWidth="124" frameHeight="150" />
+	<SubTexture name="Dog Shadow Laugh instance 10005" x="244" y="455" width="125" height="145" frameX="1" frameY="-7" frameWidth="124" frameHeight="150" />
+	<SubTexture name="Dog Shadow Laugh instance 10006" x="602" y="304" width="121" height="150" frameX="-3" frameY="-2" frameWidth="124" frameHeight="150" />
+	<SubTexture name="Dog Shadow Laugh instance 10007" x="602" y="304" width="121" height="150" frameX="-3" frameY="-2" frameWidth="124" frameHeight="150" />
+	<SubTexture name="Dog Shadow Laugh instance 10008" x="602" y="152" width="122" height="152" frameX="-3" frameY="0" frameWidth="124" frameHeight="150" />
+	<SubTexture name="Dog Shadow Laugh instance 10009" x="602" y="152" width="122" height="152" frameX="-3" frameY="0" frameWidth="124" frameHeight="150" />
+	<SubTexture name="Dog Shadow Laugh instance 10010" x="0" y="455" width="122" height="152" frameX="-3" frameY="0" frameWidth="124" frameHeight="150" />
+	<SubTexture name="Dog Shadow Laugh instance 10011" x="0" y="455" width="122" height="152" frameX="-3" frameY="0" frameWidth="124" frameHeight="150" />
+	<SubTexture name="Dog Shadow Laugh instance 10012" x="262" y="305" width="126" height="145" frameX="1" frameY="-6" frameWidth="124" frameHeight="150" />
+	<SubTexture name="Dog Shadow Laugh instance 10013" x="262" y="305" width="126" height="145" frameX="1" frameY="-6" frameWidth="124" frameHeight="150" />
+	<SubTexture name="Dog Shadow Laugh instance 10014" x="471" y="305" width="126" height="147" frameX="1" frameY="-5" frameWidth="124" frameHeight="150" />
+	<SubTexture name="Dog Shadow Laugh instance 10015" x="471" y="305" width="126" height="147" frameX="1" frameY="-5" frameWidth="124" frameHeight="150" />
+	<SubTexture name="Dog Shadow Laugh instance 10016" x="122" y="455" width="122" height="151" frameX="-3" frameY="0" frameWidth="124" frameHeight="150" />
 </TextureAtlas>

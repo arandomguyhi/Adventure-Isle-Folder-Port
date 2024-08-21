@@ -1,70 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <TextureAtlas imagePath="Dog_Shadow_Wave.png">
-	<!-- Created using the Spritesheet and XML generator -->
-	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
-	<SubTexture name="Dog Shadow wave throw instance 10000" x="963" y="249" width="215" height="243" frameX="-10" frameY="-6" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10001" x="963" y="0" width="225" height="249" frameX="1" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10002" x="737" y="0" width="226" height="250" frameX="2" frameY="1" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10003" x="737" y="250" width="224" height="251" frameX="1" frameY="2" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10004" x="737" y="250" width="224" height="251" frameX="1" frameY="2" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10005" x="239" y="483" width="188" height="240" frameX="-35" frameY="-3" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10006" x="239" y="483" width="188" height="240" frameX="-35" frameY="-3" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10007" x="963" y="492" width="222" height="217" frameX="-6" frameY="-26" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10008" x="963" y="492" width="222" height="217" frameX="-6" frameY="-26" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10009" x="359" y="725" width="176" height="264" frameX="-73" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10010" x="0" y="725" width="180" height="265" frameX="-71" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10011" x="0" y="725" width="180" height="265" frameX="-71" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10012" x="180" y="725" width="179" height="264" frameX="-72" frameY="-1" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10013" x="180" y="725" width="179" height="264" frameX="-72" frameY="-1" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10014" x="535" y="725" width="163" height="264" frameX="-88" frameY="-1" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10015" x="535" y="725" width="163" height="264" frameX="-88" frameY="-1" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10016" x="1188" y="265" width="144" height="265" frameX="-107" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10017" x="1188" y="265" width="144" height="265" frameX="-107" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10018" x="1188" y="0" width="148" height="265" frameX="-103" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10019" x="1188" y="0" width="148" height="265" frameX="-103" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10020" x="1188" y="0" width="148" height="265" frameX="-103" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10021" x="1188" y="0" width="148" height="265" frameX="-103" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10022" x="1188" y="0" width="148" height="265" frameX="-103" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10023" x="1188" y="0" width="148" height="265" frameX="-103" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10024" x="1188" y="0" width="148" height="265" frameX="-103" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10025" x="1188" y="0" width="148" height="265" frameX="-103" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10026" x="1188" y="0" width="148" height="265" frameX="-103" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10027" x="1188" y="0" width="148" height="265" frameX="-103" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10028" x="1188" y="0" width="148" height="265" frameX="-103" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog Shadow wave throw instance 10029" x="1188" y="0" width="148" height="265" frameX="-103" frameY="0" frameWidth="249" frameHeight="263"/>
-	<SubTexture name="Dog shadow wave instance 10000" x="0" y="241" width="246" height="242" frameX="-1" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10001" x="0" y="241" width="246" height="242" frameX="-1" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10002" x="0" y="241" width="246" height="242" frameX="-1" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10003" x="0" y="241" width="246" height="242" frameX="-1" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10004" x="0" y="0" width="249" height="241" frameX="-3" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10005" x="0" y="0" width="249" height="241" frameX="-3" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10006" x="0" y="0" width="249" height="241" frameX="-3" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10007" x="0" y="0" width="249" height="241" frameX="-3" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10008" x="0" y="0" width="249" height="241" frameX="-3" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10009" x="0" y="0" width="249" height="241" frameX="-3" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10010" x="0" y="0" width="249" height="241" frameX="-3" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10011" x="249" y="0" width="248" height="241" frameX="-4" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10012" x="249" y="0" width="248" height="241" frameX="-4" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10013" x="249" y="0" width="248" height="241" frameX="-4" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10014" x="249" y="0" width="248" height="241" frameX="-4" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10015" x="249" y="0" width="248" height="241" frameX="-4" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10016" x="249" y="0" width="248" height="241" frameX="-4" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10017" x="497" y="0" width="240" height="242" frameX="-5" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10018" x="497" y="0" width="240" height="242" frameX="-5" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10019" x="497" y="0" width="240" height="242" frameX="-5" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10020" x="497" y="0" width="240" height="242" frameX="-5" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10021" x="497" y="242" width="239" height="241" frameX="0" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10022" x="497" y="242" width="239" height="241" frameX="0" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10023" x="497" y="242" width="239" height="241" frameX="0" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10024" x="497" y="242" width="239" height="241" frameX="0" frameY="1" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10025" x="0" y="483" width="239" height="242" frameX="2" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10026" x="0" y="483" width="239" height="242" frameX="2" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10027" x="0" y="483" width="239" height="242" frameX="2" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10028" x="0" y="483" width="239" height="242" frameX="2" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10029" x="0" y="483" width="239" height="242" frameX="2" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10030" x="246" y="241" width="246" height="242" frameX="2" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10031" x="246" y="241" width="246" height="242" frameX="2" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10032" x="246" y="241" width="246" height="242" frameX="2" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10033" x="246" y="241" width="246" height="242" frameX="2" frameY="2" frameWidth="250" frameHeight="239"/>
-	<SubTexture name="Dog shadow wave instance 10034" x="246" y="241" width="246" height="242" frameX="2" frameY="2" frameWidth="250" frameHeight="239"/>
+	
+	
+	<SubTexture name="Dog Shadow wave throw instance 10000" x="481" y="124" width="107" height="121" frameX="-5" frameY="-3" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10001" x="481" y="0" width="112" height="124" frameX="0" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10002" x="368" y="0" width="113" height="125" frameX="1" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10003" x="368" y="125" width="112" height="125" frameX="0" frameY="1" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10004" x="368" y="125" width="112" height="125" frameX="0" frameY="1" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10005" x="119" y="241" width="94" height="120" frameX="-18" frameY="-2" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10006" x="119" y="241" width="94" height="120" frameX="-18" frameY="-2" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10007" x="481" y="246" width="111" height="108" frameX="-3" frameY="-13" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10008" x="481" y="246" width="111" height="108" frameX="-3" frameY="-13" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10009" x="179" y="362" width="88" height="132" frameX="-37" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10010" x="0" y="362" width="90" height="132" frameX="-36" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10011" x="0" y="362" width="90" height="132" frameX="-36" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10012" x="90" y="362" width="89" height="132" frameX="-36" frameY="-1" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10013" x="90" y="362" width="89" height="132" frameX="-36" frameY="-1" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10014" x="267" y="362" width="81" height="132" frameX="-44" frameY="-1" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10015" x="267" y="362" width="81" height="132" frameX="-44" frameY="-1" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10016" x="594" y="132" width="72" height="132" frameX="-54" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10017" x="594" y="132" width="72" height="132" frameX="-54" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10018" x="594" y="0" width="74" height="132" frameX="-52" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10019" x="594" y="0" width="74" height="132" frameX="-52" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10020" x="594" y="0" width="74" height="132" frameX="-52" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10021" x="594" y="0" width="74" height="132" frameX="-52" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10022" x="594" y="0" width="74" height="132" frameX="-52" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10023" x="594" y="0" width="74" height="132" frameX="-52" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10024" x="594" y="0" width="74" height="132" frameX="-52" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10025" x="594" y="0" width="74" height="132" frameX="-52" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10026" x="594" y="0" width="74" height="132" frameX="-52" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10027" x="594" y="0" width="74" height="132" frameX="-52" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10028" x="594" y="0" width="74" height="132" frameX="-52" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog Shadow wave throw instance 10029" x="594" y="0" width="74" height="132" frameX="-52" frameY="0" frameWidth="124" frameHeight="131" />
+	<SubTexture name="Dog shadow wave instance 10000" x="0" y="120" width="123" height="121" frameX="-1" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10001" x="0" y="120" width="123" height="121" frameX="-1" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10002" x="0" y="120" width="123" height="121" frameX="-1" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10003" x="0" y="120" width="123" height="121" frameX="-1" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10004" x="0" y="0" width="124" height="120" frameX="-2" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10005" x="0" y="0" width="124" height="120" frameX="-2" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10006" x="0" y="0" width="124" height="120" frameX="-2" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10007" x="0" y="0" width="124" height="120" frameX="-2" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10008" x="0" y="0" width="124" height="120" frameX="-2" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10009" x="0" y="0" width="124" height="120" frameX="-2" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10010" x="0" y="0" width="124" height="120" frameX="-2" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10011" x="124" y="0" width="124" height="120" frameX="-2" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10012" x="124" y="0" width="124" height="120" frameX="-2" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10013" x="124" y="0" width="124" height="120" frameX="-2" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10014" x="124" y="0" width="124" height="120" frameX="-2" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10015" x="124" y="0" width="124" height="120" frameX="-2" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10016" x="124" y="0" width="124" height="120" frameX="-2" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10017" x="248" y="0" width="120" height="121" frameX="-3" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10018" x="248" y="0" width="120" height="121" frameX="-3" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10019" x="248" y="0" width="120" height="121" frameX="-3" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10020" x="248" y="0" width="120" height="121" frameX="-3" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10021" x="248" y="121" width="119" height="120" frameX="0" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10022" x="248" y="121" width="119" height="120" frameX="0" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10023" x="248" y="121" width="119" height="120" frameX="0" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10024" x="248" y="121" width="119" height="120" frameX="0" frameY="0" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10025" x="0" y="241" width="119" height="121" frameX="1" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10026" x="0" y="241" width="119" height="121" frameX="1" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10027" x="0" y="241" width="119" height="121" frameX="1" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10028" x="0" y="241" width="119" height="121" frameX="1" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10029" x="0" y="241" width="119" height="121" frameX="1" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10030" x="123" y="120" width="123" height="121" frameX="1" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10031" x="123" y="120" width="123" height="121" frameX="1" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10032" x="123" y="120" width="123" height="121" frameX="1" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10033" x="123" y="120" width="123" height="121" frameX="1" frameY="1" frameWidth="125" frameHeight="119" />
+	<SubTexture name="Dog shadow wave instance 10034" x="123" y="120" width="123" height="121" frameX="1" frameY="1" frameWidth="125" frameHeight="119" />
 </TextureAtlas>
