@@ -14,7 +14,8 @@ function onCreate()
         makeAnimatedLuaSprite('dogLeft'..i, dogPath..'Dog_Shadow_Wave')
         addAnimationByPrefix('dogLeft'..i, 'idle', 'Dog shadow wave instance 1', 24, true)
         addAnimationByPrefix('dogLeft'..i, 'throw', 'Dog Shadow wave throw instance 1', 24, false)
-        scaleObject('dogLeft'..i, 2, 2)
+	playAnim('dogLeft'..i, 'idle')
+        scaleObject('dogLeft'..i, 1.8, 1.8)
 	setObjectOrder('dogLeft'..i, getObjectOrder('bush'))
         setProperty('dogLeft'..i..'.antialiasing', false)
         addLuaSprite('dogLeft'..i)
@@ -31,7 +32,7 @@ function onCreate()
 	setProperty('dogLeft'..i..'.visible', false)
 	setProperty('dogRight'..i..'.visible', false)
     end
-    runHaxeCode("FlxG.mouse.load(Paths.image('stages/duck/crosshairTarget').bitmap, 0.5, -70, -50);")
+    runHaxeCode("FlxG.mouse.load(Paths.image('stages/duck/crosshairTarget').bitmap, 0.5, -72, -50);")
 end
 
 function onUpdate(elapsed)
@@ -42,7 +43,7 @@ function onUpdate(elapsed)
     end
 end
 
-local dogCount = 0
+local dogCount = 1
 function onEvent(name, value1, value2)
     if name == 'DogSpawn' then
 	for d = 1,2 do
@@ -53,21 +54,22 @@ function onEvent(name, value1, value2)
 	    local dogVis = getProperty(doguin..'.visible')
 	    setProperty(doguin..'.visible', (dogVis and true or true)) -- im so smart hahah
 
-	    dogCount = dogCount + 1
-
-	    if doguin == 'dogRight1' or doguin == 'dogRight2' then
-	    	setProperty('dogRight'..d..'.x', getRandomInt(900,1400))
-	    	setProperty('dogRight'..d..'.y', getRandomInt(1220,1270))
+	    if doguin == 'dogLeft1' or doguin == 'dogLeft2' then
+	    	setProperty('dogLeft'..d..'.x', getRandomInt(900,1400))
+	    	setProperty('dogLeft'..d..'.y', getRandomInt(1270,1310))
 	    end
-
-            runTimer('attack'..dogCount, 2)
 	end
+
+	dogCount = dogCount + 1
+	runTimer('attack'..dogCount, 2)
     end
 end
 
 function onTimerCompleted(tag)
-    if tag == 'attack'..dogCount then
-	-- i'll make them attack later !!!!
-	debugPrint('attack '..dogCount)
+    for i = 1,dogCount do
+   	if tag == 'attack'..i then
+	    -- i'll make they attack later !!!!
+	    debugPrint('attack '..i)
+	end
     end
 end

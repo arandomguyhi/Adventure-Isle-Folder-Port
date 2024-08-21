@@ -3,6 +3,8 @@ addHaxeLibrary('FlxRect', 'flixel.math')
 setProperty('skipArrowStartTween', true)
 
 function onCreate()
+    removeHScript('scripts/VideoSpriteScript')
+
     makeLuaSprite('base', 'healthbars/duck/base', 0, 609.5)
     setObjectCamera('base', 'hud')
     scaleObject('base', 0.5, 0.5)
