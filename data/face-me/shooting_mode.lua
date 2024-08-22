@@ -32,7 +32,7 @@ function onCreate()
 	setProperty('dogLeft'..i..'.visible', false)
 	setProperty('dogRight'..i..'.visible', false)
     end
-    runHaxeCode("FlxG.mouse.load(Paths.image('stages/duck/crosshairTarget').bitmap, 0.5, -72, -50);")
+    runHaxeCode("FlxG.mouse.load(Paths.image('stages/duck/crosshairTarget').bitmap, 0.5, -73, -50);")
 end
 
 local dogSprGroup = {'dogFront1', 'dogFront2', 'dogLeft1', 'dogLeft2', 'dogRight1', 'dogRight2'}
@@ -60,7 +60,7 @@ function onUpdate(elapsed)
     if getVar('shooting_mode') then
 	setPropertyFromClass('flixel.FlxG', 'mouse.visible', true)
 
-	if mouseReleased() then playSound('hitsound') end
+	if mouseReleased() then playSound('duckseason/laser', 0.5) end
 
 	for _,dogs in ipairs(dogSprGroup) do
 	    runHaxeCode([[
@@ -75,14 +75,4 @@ function onUpdate(elapsed)
     else
 	setPropertyFromClass('flixel.FlxG', 'mouse.visible', false)
     end
-end
-
-function mouseOverlaps(obj, camera)
-    local mX = getMouseX(camera)
-    local mY = getMouseY(camera)
-    local x = getProperty(obj..'.x') / mX
-    local y = getProperty(obj..'.y') / mY
-    local wid = getProperty(obj..'.width')
-    local hgt = getProperty(obj..'.height')
-    return (mX > x) and (mX < x + wid) and (mY > y) and (mY < y + hgt)
 end
