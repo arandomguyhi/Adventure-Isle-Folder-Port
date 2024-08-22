@@ -60,7 +60,9 @@ function onUpdate(elapsed)
     if getVar('shooting_mode') then
 	setPropertyFromClass('flixel.FlxG', 'mouse.visible', true)
 
-	for i,dogs in ipairs(dogSprGroup) do
+	if mouseReleased() then playSound('hitsound') end
+
+	for _,dogs in ipairs(dogSprGroup) do
 	    runHaxeCode([[
 		var dogSpr = game.getLuaObject(']]..dogs..[[');
 		if (FlxG.mouse.overlaps(dogSpr)) {
