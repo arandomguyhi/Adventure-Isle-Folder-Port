@@ -1,3 +1,5 @@
+addHaxeLibrary('FlxColor', 'flixel.util')
+
 local dogPath = 'characters/duck_season/'
 
 luaDebugMode = true
@@ -32,7 +34,7 @@ function onCreate()
 	setProperty('dogLeft'..i..'.visible', false)
 	setProperty('dogRight'..i..'.visible', false)
     end
-    runHaxeCode("FlxG.mouse.load(Paths.image('stages/duck/crosshairTarget').bitmap, 0.5, -73, -50);")
+    runHaxeCode("FlxG.mouse.load(Paths.image('stages/duck/crosshair').bitmap, 0.5, -73, -50);")
 end
 
 local dogSprGroup = {'dogFront1', 'dogFront2', 'dogLeft1', 'dogLeft2', 'dogRight1', 'dogRight2'}
@@ -60,14 +62,31 @@ function onUpdate(elapsed)
     if getVar('shooting_mode') then
 	setPropertyFromClass('flixel.FlxG', 'mouse.visible', true)
 
-	if mouseReleased() then playSound('duckseason/laser', 0.5) end
+	if mouseReleased() then
+	    playSound('duckseason/laser', 0.5)
+
+	    runHaxeCode([[
+		FlxG.mouse.load(Paths.image('stages/duck/crosshairTarget').bitmap, 0.5, -73, -50);
+		new FlxTimer().start(0.1, function(tmr:FlxTimer) {
+			FlxG.mouse.load(Paths.image('stages/duck/crosshair').bitmap, 0.5, -73, -50);
+		});
+	    ]])
+	end
 
 	for _,dogs in ipairs(dogSprGroup) do
 	    runHaxeCode([[
 		var dogSpr = game.getLuaObject(']]..dogs..[[');
 		if (FlxG.mouse.overlaps(dogSpr)) {
 		    if (FlxG.mouse.justPressed && dogSpr.visible) {
-			dogSpr.visible = false;
+			FlxTween.tween(dogSpr.colorTransform, {redOffset: 255, greenOffset: 255, blueOffset: 255}, 0.1, {
+			    onComplete: function(twn) {
+				dogSpr.visible = false;
+
+				dogSpr.colorTransform.redOffset = 0;
+				dogSpr.colorTransform.greenOffset = 0;
+				dogSpr.colorTransform.blueOffset = 0;
+			    }
+			});
 		    }
 		}
 	    ]])
