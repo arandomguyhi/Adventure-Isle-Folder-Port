@@ -35,41 +35,52 @@ function onCreate()
     runHaxeCode("FlxG.mouse.load(Paths.image('stages/duck/crosshairTarget').bitmap, 0.5, -72, -50);")
 end
 
-function onUpdate(elapsed)
-    if getVar('shooting_mode') then
-	setPropertyFromClass('flixel.FlxG', 'mouse.visible', true)
-    else
-	setPropertyFromClass('flixel.FlxG', 'mouse.visible', false)
-    end
-end
-
-local dogCount = 1
+local dogSprGroup = {'dogFront1', 'dogFront2', 'dogLeft1', 'dogLeft2', 'dogRight1', 'dogRight2'}
 function onEvent(name, value1, value2)
     if name == 'DogSpawn' then
 	for d = 1,2 do
-	    local dogSprGroup = {'dogFront1', 'dogFront2', 'dogLeft1', 'dogLeft2', 'dogRight1', 'dogRight2'}
-	    local randomDog = getRandomInt(1, #dogSprGroup)
-	    doguin = dogSprGroup[randomDog]
+	    local randomIndex = getRandomInt(1,#dogSprGroup)
+	    doguin = dogSprGroup[randomIndex]
 
-	    local dogVis = getProperty(doguin..'.visible')
-	    setProperty(doguin..'.visible', (dogVis and true or true)) -- im so smart hahah
+	    if not getProperty(doguin..'.visible') then
+		setProperty(doguin..'.visible', true)
+	    end
 
 	    if doguin == 'dogLeft1' or doguin == 'dogLeft2' then
 	    	setProperty('dogLeft'..d..'.x', getRandomInt(900,1400))
 	    	setProperty('dogLeft'..d..'.y', getRandomInt(1270,1310))
 	    end
-	end
 
-	dogCount = dogCount + 1
-	runTimer('attack'..dogCount, 2)
+	    debugPrint(doguin)
+	end
     end
 end
 
-function onTimerCompleted(tag)
-    for i = 1,dogCount do
-   	if tag == 'attack'..i then
-	    -- i'll make they attack later !!!!
-	    debugPrint('attack '..i)
+function onUpdate(elapsed)
+    if getVar('shooting_mode') then
+	setPropertyFromClass('flixel.FlxG', 'mouse.visible', true)
+
+	for i,dogs in ipairs(dogSprGroup) do
+	    runHaxeCode([[
+		var dogSpr = game.getLuaObject(']]..dogs..[[');
+		if (FlxG.mouse.overlaps(dogSpr)) {
+		    if (FlxG.mouse.justPressed && dogSpr.visible) {
+			dogSpr.visible = false;
+		    }
+		}
+	    ]])
 	end
+    else
+	setPropertyFromClass('flixel.FlxG', 'mouse.visible', false)
     end
+end
+
+function mouseOverlaps(obj, camera)
+    local mX = getMouseX(camera)
+    local mY = getMouseY(camera)
+    local x = getProperty(obj..'.x') / mX
+    local y = getProperty(obj..'.y') / mY
+    local wid = getProperty(obj..'.width')
+    local hgt = getProperty(obj..'.height')
+    return (mX > x) and (mX < x + wid) and (mY > y) and (mY < y + hgt)
 end
