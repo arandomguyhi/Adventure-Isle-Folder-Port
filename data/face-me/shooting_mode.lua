@@ -5,13 +5,13 @@ local dogPath = 'characters/duck_season/'
 luaDebugMode = true
 function onCreate()
     for i = 1,2 do -- testing with 2 sprites for now
-        makeAnimatedLuaSprite('dogFront'..i, dogPath..'Dog_Shadow_Laugh')
+        makeAnimatedLuaSprite('dogFront'..i, dogPath..'Dog_Shadow_Laugh', 0, 1350)
         addAnimationByPrefix('dogFront'..i, 'idle', 'Dog Shadow Laugh instance 1', 24, true)
         addAnimationByPrefix('dogFront'..i, 'throw', 'Dog Laugh Shadow Throw instance 1', 24, false)
-        scaleObject('dogFront'..i, 2, 2)
-	setObjectOrder('dogFront'..i, getObjectOrder('bush'))
+	playAnim('dogFront'..i, 'idle')
+        scaleObject('dogFront'..i, 6, 5)
         setProperty('dogFront'..i..'.antialiasing', false) -- to optimize a bit
-        addLuaSprite('dogFront'..i)
+        addLuaSprite('dogFront'..i, true)
 
         makeAnimatedLuaSprite('dogLeft'..i, dogPath..'Dog_Shadow_Wave')
         addAnimationByPrefix('dogLeft'..i, 'idle', 'Dog shadow wave instance 1', 24, true)
@@ -45,12 +45,14 @@ function onEvent(name, value1, value2)
 	    doguin = dogSprGroup[randomIndex]
 
 	    if not getProperty(doguin..'.visible') then
-		setProperty(doguin..'.visible', true)
-	    end
+		if doguin == 'dogLeft1' or doguin == 'dogLeft2' then
+	    	    setProperty(doguin..'.x', getRandomInt(900,1400))
+	    	    setProperty(doguin..'.y', getRandomInt(1270,1310))
+		elseif doguin == 'dogFront1' or doguin == 'dogFront2' then
+		    setProperty('dogFront'..d..'.x', getRandomInt(1150, 2150))
+	    	end
 
-	    if doguin == 'dogLeft1' or doguin == 'dogLeft2' then
-	    	setProperty('dogLeft'..d..'.x', getRandomInt(900,1400))
-	    	setProperty('dogLeft'..d..'.y', getRandomInt(1270,1310))
+		setProperty(doguin..'.visible', true)
 	    end
 
 	    debugPrint(doguin)
