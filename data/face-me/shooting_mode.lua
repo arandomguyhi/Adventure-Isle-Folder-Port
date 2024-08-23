@@ -1,5 +1,3 @@
-addHaxeLibrary('FlxColor', 'flixel.util')
-
 local dogPath = 'characters/duck_season/'
 
 luaDebugMode = true
@@ -31,6 +29,13 @@ function onCreate()
         setProperty('dogRight'..i..'.antialiasing', false)
         addLuaSprite('dogRight'..i)
 
+	makeAnimatedLuaSprite('duck'..i, 'stages/duck/bird', 500, 700)
+	addAnimationByPrefix('duck'..i, 'idle', 'Bird up', 24, false)
+	playAnim('duck'..i, 'idle')
+	setProperty('duck'..i..'.antialiasing', false)
+	addLuaSprite('duck'..i)
+
+	setProperty('duck'..i..'.visible', false)
 	setProperty('dogFront'..i..'.visible', false)
 	setProperty('dogLeft'..i..'.visible', false)
 	setProperty('dogRight'..i..'.visible', false)
@@ -38,40 +43,41 @@ function onCreate()
     runHaxeCode("FlxG.mouse.load(Paths.image('stages/duck/crosshair').bitmap, 0.5, -73, -50);")
 end
 
-local dogSprGroup = {'dogFront1', 'dogFront2', 'dogLeft1', 'dogLeft2', 'dogRight1', 'dogRight2'}
+local dogSprGroup = {'dogFront1', 'dogFront2', 'duck1', 'duck2', 'dogLeft1', 'dogLeft2', 'dogRight1', 'dogRight2'}
 function onEvent(name, value1, value2)
     if name == 'DogSpawn' then
-	for d = 1,2 do
-	    local randomIndex = getRandomInt(1,#dogSprGroup)
-	    doguin = dogSprGroup[randomIndex]
+	local randomIndex = getRandomInt(1,#dogSprGroup)
+	doguin = dogSprGroup[randomIndex]
 
-	    if not getProperty(doguin..'.visible') then
-		-- THIS IS SO BAD HELÇP :SOB:
-		if doguin == 'dogLeft1' then
-	    	    setProperty('dogLeft1.x', (getProperty('dogLeft2.visible') and getX('dogLeft2')-getWidth('dogLeft2') or getRandomInt(900,1300)))
-	    	    setProperty('dogLeft1.y', getRandomInt(1270,1310))
-		elseif doguin == 'dogLeft2' then
-		    setProperty('dogLeft2.x', (getProperty('dogLeft1.visible') and getX('dogLeft1')+getWidth('dogLeft1') or getRandomInt(900,1300)))
-	    	    setProperty('dogLeft2.y', getRandomInt(1270,1310))
-		end
-		if doguin == 'dogFront1' then
-		    setProperty('dogFront1.x', (getProperty('dogFront2.visible') and getX('dogFront2')-getWidth('dogFront2') or getRandomInt(1150, 2150)))
-		elseif doguin == 'dogFront2' then
-		    setProperty('dogFront2.x', (getProperty('dogFront1.visible') and getX('dogFront1')+getWidth('dogFront1') or getRandomInt(1150, 2150)))
-		end
-		if doguin == 'dogRight1' then
-		    setProperty('dogRight1.x', (getProperty('dogRight2.visible') and getX('dogRight2')+getWidth('dogRight2')-5 or 2500))
-	    	    setProperty('dogRight1.y', getRandomInt(1200, 1250))
-		elseif doguin == 'dogRight2' then
-		    setProperty('dogRight2.x', (getProperty('dogRight1.visible') and getX('dogRight1')+getWidth('dogRight1')-10 or 2500))
-	    	    setProperty('dogRight2.y', getRandomInt(1200, 1250))
-	    	end
-
-		setProperty(doguin..'.visible', true)
-	    end
-
-	    debugPrint(doguin)
+	-- THIS IS SO BAD HELÇP :SOB:
+	if doguin == 'dogLeft1' then
+	    setProperty('dogLeft1.x', (getProperty('dogLeft2.visible') and getX('dogLeft2')-getWidth('dogLeft2') or getRandomInt(900,1300)))
+	    setProperty('dogLeft1.y', getRandomInt(1270,1310))
+	elseif doguin == 'dogLeft2' then
+	    setProperty('dogLeft2.x', (getProperty('dogLeft1.visible') and getX('dogLeft1')+getWidth('dogLeft1') or getRandomInt(900,1300)))
+	    setProperty('dogLeft2.y', getRandomInt(1270,1310))
 	end
+	if doguin == 'dogFront1' then
+	    setProperty('dogFront1.x', (getProperty('dogFront2.visible') and getX('dogFront2')-getWidth('dogFront2') or getRandomInt(1150, 2150)))
+	elseif doguin == 'dogFront2' then
+	    setProperty('dogFront2.x', (getProperty('dogFront1.visible') and getX('dogFront1')+getWidth('dogFront1') or getRandomInt(1150, 2150)))
+	end
+	if doguin == 'dogRight1' then
+	    setProperty('dogRight1.x', (getProperty('dogRight2.visible') and getX('dogRight2')+getWidth('dogRight2')-5 or 2500))
+	    setProperty('dogRight1.y', getRandomInt(1200, 1250))
+	elseif doguin == 'dogRight2' then
+	    setProperty('dogRight2.x', (getProperty('dogRight1.visible') and getX('dogRight1')+getWidth('dogRight1')-10 or 2500))
+	    setProperty('dogRight2.y', getRandomInt(1200, 1250))
+	end
+	if doguin == 'duck1' then
+	    setProperty('duck1.x', getRandomInt(500,1000))
+	    playAnim('duck1', 'idle')
+	elseif doguin == 'duck2' then
+	    setProperty('duck2.x', getRandomInt(500,1000))
+	    playAnim('duck2', 'idle')
+	end
+
+	setProperty(doguin..'.visible', true)
     end
 end
 

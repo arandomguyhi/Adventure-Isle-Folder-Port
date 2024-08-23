@@ -35,7 +35,7 @@ function onCreatePost()
 
     for i = 0,3 do
         setPropertyFromGroup('strumLineNotes', i, 'visible', false)
-        setProperty('strumLineNotes.members['.. i+4 .. '].alpha', 0.001)
+	setPropertyFromGroup('strumLineNotes', i+4, 'alpha', 0.001)
     end
 end
 
@@ -51,10 +51,10 @@ end
 
 function onStepHit()
     if curStep == 64 then
-        for i, hud in ipairs({'base', 'duckBarP2', 'duckBarP1', 'dad'}) do
-            startTween('tweencoiso'..i, hud, {alpha = 1}, 0.5, {ease = 'sineInOut'})
-            noteTweenAlpha('notealpha'..i+3, i+3, 1, 0.5, 'sineInOut')
-        end
+	for i, things in ipairs({'base', 'duckBarP1', 'duckBarP2', 'dad'}) do
+	    startTween('tweencoiso'..i, things, {alpha = 1}, 0.5, {ease = 'sineInOut'})
+	    noteTweenAlpha('bomdia'..i+3, i+3, 1, 0.5, 'sineInOut')
+	end
     end
 end
 
