@@ -1,0 +1,28 @@
+{
+    "subtitles": [
+        {
+            "steps": [991, 996, 1000, 1008],
+            "curString": "Do /you /really /think"
+        },
+        {
+            "steps": [1019, 1021, 1026, 1028],
+            "curString": "you /have /the /audacity"
+        },
+        {
+            "steps": [1046, 1048, 1054, 1056],
+            "curString": "to /try /and /delete"
+        },
+        {
+            "steps": [1069, 1072, 1081],
+            "curString": "a /living /organism?"
+        },
+        {
+            "steps": [1095, 1100, 1105, 1108, 1117],
+            "curString": "Your /method /of /containing /me"
+        },
+        {
+            "steps": [1123, 1127, 1144, 1145, 1158, 1175],
+            "curString": "is /flimsy /and /half/-hearted"
+        }
+    ]
+}
